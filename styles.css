@@ -135,7 +135,7 @@ ul { padding-left: 40px; }
 #stepik > li > a:before
 {
 	display: inline-block;
-	margin: 2px 7px 0px 0px;
+	margin: 2px 6px 0px 0px;
 	content: url("pics/pdf.svg");
 	vertical-align: top;
 	width: 16px;
