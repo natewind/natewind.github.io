@@ -141,6 +141,28 @@ ul { padding-left: 40px; }
 	width: 16px;
 }
 
+#button
+{
+	display: block;
+	position: fixed;
+	right: 60px;
+	bottom: 50px;
+	--size: 58px;
+	width: var(--size);
+	height: var(--size);
+	border-radius: 50%;
+	background-color: #007000;
+	background-image: url("pics/print.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: auto 45%;
+	box-shadow: 0 0 6px rgba(0, 0, 0, 0.14), 0 6px 12px rgba(0, 0, 0, 0.28);
+}
+
+/*Experimental:
+#button:hover  { background-color: #008000; }
+#button:active { background-color: #006000; }*/
+
 @page {	margin: 0; }
 
 @media print
@@ -155,6 +177,11 @@ ul { padding-left: 40px; }
 	{
 		margin: 0;
 		border-image: none;
+	}
+
+	#button
+	{
+		display: none;
 	}
 }
 
