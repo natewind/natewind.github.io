@@ -147,13 +147,13 @@ ul { padding-left: 40px; }
 	position: fixed;
 	right: 60px;
 	bottom: 50px;
-	/*--size: 58px;*/
-	--size: 5.1vw;
+	--size: 58px;
+	/*--size: 5.1vw;*/
 	width: var(--size);
 	height: var(--size);
 	border-radius: 50%;
-	background-color: #007000;
-	/*background-color: navy;*/
+	/*background-color: #007000;*/
+	background-color: navy;
 	background-image: url("pics/print.svg");
 	background-repeat: no-repeat;
 	background-position: center;
@@ -161,7 +161,10 @@ ul { padding-left: 40px; }
 	box-shadow: 0 0 6px rgba(0, 0, 0, 0.14), 0 6px 12px rgba(0, 0, 0, 0.28);
 }
 
-/*@media only screen and (max-width: 1000px) { #button { --size: 100px; } }*/
+@media (min-resolution: 150dpi)
+{
+	#button { --size: 100px; }
+}
 
 /*Experimental:
 #button:hover  { background-color: #008000; }
