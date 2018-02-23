@@ -147,7 +147,7 @@ ul { padding-left: 40px; }
 	position: fixed;
 	right: 60px;
 	bottom: 50px;
-	--size: 58px;
+	--size: 15.4mm;
 	width: var(--size);
 	height: var(--size);
 	border-radius: 50%;
