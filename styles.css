@@ -168,7 +168,7 @@ ul { padding-left: 40px; }
 
 @media screen and (min-resolution: 150dpi) and (orientation: landscape)
 {
-	#button { --size: 5.9pc; }
+	#button { --size: 6pc; }
 }
 /*Experimental:
 #button:hover  { background-color: #008000; }
