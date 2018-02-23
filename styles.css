@@ -152,7 +152,7 @@ ul { padding-left: 40px; }
 	width: var(--size);
 	height: var(--size);
 	border-radius: 50%;
-	/*background-color: #007000;*/
+	background-color: #007000;
 	background-color: navy;
 	background-image: url("pics/print.svg");
 	background-repeat: no-repeat;
