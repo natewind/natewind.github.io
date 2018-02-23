@@ -152,8 +152,8 @@ ul { padding-left: 40px; }
 	width: var(--size);
 	height: var(--size);
 	border-radius: 50%;
-	/*background-color: #007000;*/
-	background-color: navy;
+	background-color: #007000;
+	/*background-color: navy;*/
 	background-image: url("pics/print.svg");
 	background-repeat: no-repeat;
 	background-position: center;
@@ -163,7 +163,7 @@ ul { padding-left: 40px; }
 
 @media (min-resolution: 150dpi)
 {
-	#button { --size: 1.7in; position: absolute; }
+	#button { --size: 1.7in; }
 }
 
 /*Experimental:
