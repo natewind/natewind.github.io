@@ -163,7 +163,7 @@ ul { padding-left: 40px; }
 
 @media (min-resolution: 150dpi)
 {
-	#button { --size: 1.8in; }
+	#button { --size: 1.7in; }
 }
 
 /*Experimental:
