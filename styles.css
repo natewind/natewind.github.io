@@ -147,11 +147,11 @@ ul { padding-left: 40px; }
 	position: fixed;
 	right: 60px;
 	bottom: 50px;
-	--size: 3.6rem;
+	--size: 43.5pt;
 	width: var(--size);
 	height: var(--size);
 	border-radius: 50%;
-	background-color: #007000;
+	background-color: navy;
 	background-image: url("pics/print.svg");
 	background-repeat: no-repeat;
 	background-position: center;
