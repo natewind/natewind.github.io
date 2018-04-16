@@ -182,6 +182,12 @@ ul { padding-left: 40px; }
 		margin: 0;
 		border: 0;
 	}
+
+	#top, #top > div { display: block; }
+
+	a > span, div#header { display: none; }
+
+	#photo { min-width: 0; width: 0; }
 }
 
 /*Experimental:
