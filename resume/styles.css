@@ -135,7 +135,7 @@ ul { padding-left: 40px; }
 #stepik > li > a:before
 {
 	display: inline-block;
-	margin: 2px 6px 0px 0px;
+	margin: 3px 7px 0px 0px;
 	content: url("../pics/stepik.svg");
 	vertical-align: top;
 	width: 16px;
@@ -181,6 +181,7 @@ ul { padding-left: 40px; }
 		height: auto;
 		margin: 0;
 		border: 0;
+		padding: 30px 20px 30px 30px;
 	}
 
 	#top, #top > div { display: block; }
@@ -188,6 +189,18 @@ ul { padding-left: 40px; }
 	a > span, div#header { display: none; }
 
 	#photo { min-width: 0; width: 0; }
+
+	#stepik
+	{
+		list-style-type: none;
+		padding-left: 17px;
+	}
+
+	#stepik > li > a
+	{
+		float: left;
+		position: relative;
+	}
 }
 
 /*Experimental:
