@@ -31,7 +31,7 @@ page
 	width: 809px;
 }
 
-p a, a > span
+a > span
 {
 	color: #008ace;
 	border-bottom: 1px solid #b2ccf0;
