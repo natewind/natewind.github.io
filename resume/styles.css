@@ -12,7 +12,7 @@ body
 	background-color: #404040;
 	background-image: url("../pics/texture.png");
 	background-attachment: fixed;
-	font-family: "PT Sans";
+	font-family: "PT Sans", "PT Sans Local", sans-serif;
 	font-size: 16px;
 }
 
@@ -83,7 +83,7 @@ ul { padding-left: 40px; }
 #contacts > a > span
 {
 	vertical-align: top;
-	font-family: "Ubuntu";
+	font-family: "Ubuntu", "Ubuntu Local", sans-serif;
 	font-size: 15px;
 }
 
@@ -92,7 +92,7 @@ ul { padding-left: 40px; }
 	width: 100%;
 	padding-top: 15px;
 	text-align: center;
-	font-family: "PT Serif";
+	font-family: "PT Serif", "PT Serif Local", serif;
 	--padding: 8px;
 }
 
@@ -218,34 +218,34 @@ ul { padding-left: 40px; }
 
 @font-face
 {
-	font-family: "Ubuntu";
+	font-family: "Ubuntu Local";
 	src: url("../fonts/Ubuntu Regular.ttf");
 }
 
 @font-face
 {
-	font-family: "PT Sans";
+	font-family: "PT Sans Local";
 	src: url("../fonts/PT Sans Regular.ttf");
 	font-weight: normal;
 }
 
 @font-face
 {
-	font-family: "PT Sans";
+	font-family: "PT Sans Local";
 	src: url("../fonts/PT Sans Bold.ttf");
 	font-weight: bold;
 }
 
 @font-face
 {
-	font-family: "PT Serif";
+	font-family: "PT Serif Local";
 	src: url("../fonts/PT Serif Regular.ttf");
 	font-style: normal;
 }
 
 @font-face
 {
-	font-family: "PT Serif";
+	font-family: "PT Serif Local";
 	src: url("../fonts/PT Serif Italic.ttf");
 	font-style: italic;
 }
