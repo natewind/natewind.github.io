@@ -124,13 +124,19 @@ ul { padding-left: 40px; }
 
 #stepik
 {
-	width: 400px;
+	/*width: 400px;
+	padding-right: 225px;*/
 	margin-bottom: 18px;
 }
 
-#stepik > li { margin-bottom: 10px; }
+#stepik > li { margin-bottom: 9px; }
 
-#stepik > li > a { float: right; }
+#stepik > li > a
+{
+	position: relative;
+	float: right;
+	right: 225px;
+}
 
 #stepik > li > a:before
 {
@@ -199,7 +205,7 @@ ul { padding-left: 40px; }
 	#stepik > li > a
 	{
 		float: left;
-		position: relative;
+		right: 0;
 	}
 }
 
