@@ -42,21 +42,21 @@ p, ul {	margin-bottom: 16px; }
 
 ul { padding-left: 40px; }
 
+.strong { font-weight: bold; }
+
 #top
 {
-	display: table-row;
+	--height: 141px;
+	min-height: var(--height);
+	margin-bottom: 27px;
 	font-size: 0;
 }
 
-#top > div
+#contacts
 {
-	display: table-cell;
-	vertical-align: top;
+	float: left;
+	margin-top: 6px;
 }
-
-#contacts, #photo { min-width: 210px; }
-
-#contacts { padding-top: 6px; }
 
 #contacts > a
 {
@@ -89,7 +89,8 @@ ul { padding-left: 40px; }
 
 #header
 {
-	width: 100%;
+	width: 243px;
+	margin: 0 auto;
 	padding-top: 15px;
 	text-align: center;
 	font-family: "PT Serif", "PT Serif Local", serif;
@@ -112,15 +113,13 @@ ul { padding-left: 40px; }
 	font-size: 16px;
 }
 
-#photo { text-align: right; }
+#photo { float: right; }
 
 #photo > img
 {
-	max-height: 141px;
+	max-height: var(--height);
 	border-radius: 8px;
 }
-
-#top + p { margin-top: 27px; }
 
 #stepik
 {
@@ -190,11 +189,17 @@ ul { padding-left: 40px; }
 		padding: 30px 20px 30px 30px;
 	}
 
-	#top, #top > div { display: block; }
+	#top { text-align: center; }
 
-	a > span, div#header { display: none; }
+	#photo, #contacts
+	{
+		float: none;
+		display: inline-block;
+	}
 
-	#photo { min-width: 0; width: 0; }
+	#contacts { margin-left: 12px; }
+
+	#stepik > li > a > span { display: none; }
 
 	#stepik
 	{
