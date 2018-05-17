@@ -121,13 +121,6 @@ ul { padding-left: 40px; }
 	border-radius: 8px;
 }
 
-#stepik
-{
-	/*width: 400px;
-	padding-right: 225px;*/
-	margin-bottom: 18px;
-}
-
 #stepik > li { margin-bottom: 10px; }
 
 #stepik > li > a
