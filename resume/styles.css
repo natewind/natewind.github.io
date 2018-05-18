@@ -74,8 +74,8 @@ ul { padding-left: 40px; }
 	width: 16px;
 }
 
-#yota:before     { content: url("../pics/phone.svg");  }
-#gmail:before    { content: url("../pics/gmail.svg");    }
+#phone:before    { content: url("../pics/phone.svg");  }
+#email:before    { content: url("../pics/gmail.svg");    }
 #github:before   { content: url("../pics/github.svg");   }
 #telegram:before { content: url("../pics/telegram.svg"); }
 #vk:before       { content: url("../pics/vk.svg");       }
