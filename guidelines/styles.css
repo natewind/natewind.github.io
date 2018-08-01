@@ -1,0 +1,269 @@
+*
+{
+	margin: 0;
+	border: 0;
+	padding: 0;
+	text-decoration: none;
+}
+
+body
+{
+	padding-top: 25px;
+	background-color: #404040;
+	background-image: url("../pics/texture.png");
+	background-attachment: fixed;
+	font-family: "PT Sans", "PT Sans Local", sans-serif;
+	font-size: 16px;
+}
+
+page
+{
+	display: block;
+	background: white;
+	box-sizing: border-box;
+	background-clip: padding-box;
+	margin: 0px auto 25px auto;
+	border: 9px solid transparent;
+	border-image: url("../pics/shadow.png") 9 repeat;
+	overflow: hidden;
+	padding: 64px;
+	height: 1140px;
+	width: 809px;
+}
+
+a > span
+{
+	color: #008ace;
+	border-bottom: 1px solid #b2ccf0;
+	padding-bottom: 2px;
+}
+
+p, ul {	margin-bottom: 16px; }
+
+ul { padding-left: 40px; }
+
+.strong { font-weight: bold; }
+
+#top
+{
+	--height: 141px;
+	min-height: var(--height);
+	margin-bottom: 27px;
+	font-size: 0;
+}
+
+#contacts
+{
+	float: left;
+	margin-top: 6px;
+}
+
+#contacts > a
+{
+	display: inline-block;
+	margin-bottom: 9px;
+	min-width: 0px;
+	float: left;
+	clear: left;
+}
+
+#contacts > a:before
+{
+	display: inline-block;
+	margin: 2px 7px 0px 0px;
+	width: 16px;
+}
+
+#phone:before    { content: url("../pics/phone.svg");  }
+#email:before    { content: url("../pics/gmail.svg");    }
+#github:before   { content: url("../pics/github.svg");   }
+#telegram:before { content: url("../pics/telegram.svg"); }
+#vk:before       { content: url("../pics/vk.svg");       }
+
+#contacts > a > span
+{
+	vertical-align: top;
+	font-family: "Ubuntu", "Ubuntu Local", sans-serif;
+	font-size: 15px;
+}
+
+#header
+{
+	width: 243px;
+	margin: 0 auto;
+	padding-top: 15px;
+	text-align: center;
+	font-family: "PT Serif", "PT Serif Local", serif;
+	--padding: 8px;
+}
+
+#name, #job { margin: 0; }
+
+#name
+{
+	padding-bottom: var(--padding);
+	border-bottom: 1px solid black;
+	font-size: 22px;
+}
+
+#job
+{
+	padding-top: var(--padding);
+	font-style: italic;
+	font-size: 16px;
+}
+
+#photo { float: right; }
+
+#photo > img
+{
+	max-height: var(--height);
+	border-radius: 8px;
+}
+
+#stepik > li { margin-bottom: 10px; }
+
+#stepik > li > a
+{
+	position: relative;
+	float: right;
+	right: 225px;
+}
+
+#stepik > li > a:before
+{
+	display: inline-block;
+	margin: 3px 7px 0px 0px;
+	content: url("../pics/stepik.svg");
+	vertical-align: top;
+	width: 16px;
+}
+
+#button
+{
+	display: block;
+	position: fixed;
+	right: 60px;
+	bottom: 50px;
+	--size: 58px;
+	/*--size: 5.1vw;*/
+	width: var(--size);
+	height: var(--size);
+	border-radius: 50%;
+	background-color: #007000;
+	/*background-color: navy;*/
+	background-image: url("../pics/print.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: auto 46%;
+	box-shadow: 0 0 6px rgba(0, 0, 0, 0.14), 0 6px 12px rgba(0, 0, 0, 0.28);
+}
+
+@media screen and (min-resolution: 150dpi)
+{
+	#button { --size: 1.7in; }
+}
+
+@media screen and (min-resolution: 150dpi) and (orientation: landscape)
+{
+	#button { --size: 1.1in; }
+}
+
+@media only screen and (max-width: 825px)
+{
+	body { padding-top: 0; }
+
+	page
+	{
+		width: auto;
+		height: auto;
+		margin: 0;
+		border: 0;
+		padding: 30px 20px 30px 30px;
+	}
+
+	#top { text-align: center; }
+
+	#photo, #contacts
+	{
+		float: none;
+		display: inline-block;
+	}
+
+	#contacts { margin-left: 12px; }
+
+	#stepik > li > a > span { display: none; }
+
+	#stepik
+	{
+		list-style-type: none;
+		padding-left: 17px;
+	}
+
+	#stepik > li > a
+	{
+		float: left;
+		clear: left;
+		right: 0;
+	}
+}
+
+/*Experimental:
+#button:hover  { background-color: #008000; }
+#button:active { background-color: #006000; }*/
+
+@page {	margin: 0; }
+
+@media print
+{
+	body
+	{
+		background: white;
+		padding-top: 0;
+	}
+
+	page
+	{
+		margin: 0;
+		border-image: none;
+	}
+
+	#button
+	{
+		display: none;
+	}
+}
+
+@font-face
+{
+	font-family: "Ubuntu Local";
+	src: url("../fonts/Ubuntu Regular.ttf");
+}
+
+@font-face
+{
+	font-family: "PT Sans Local";
+	src: url("../fonts/PT Sans Regular.ttf");
+	font-weight: normal;
+}
+
+@font-face
+{
+	font-family: "PT Sans Local";
+	src: url("../fonts/PT Sans Bold.ttf");
+	font-weight: bold;
+}
+
+@font-face
+{
+	font-family: "PT Serif Local";
+	src: url("../fonts/PT Serif Regular.ttf");
+	font-style: normal;
+}
+
+@font-face
+{
+	font-family: "PT Serif Local";
+	src: url("../fonts/PT Serif Italic.ttf");
+	font-style: italic;
+}
