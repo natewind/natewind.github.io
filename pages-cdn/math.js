@@ -1,5 +1,11 @@
 window.onload = function()
 {
+	var favicon = document.createElement("link");
+	favicon.type = "image/x-icon";
+	favicon.rel = "shortcut icon";
+	favicon.href = "https://natewind.github.io/pages-cdn/pics/text.png";
+	document.head.appendChild(favicon);
+
 	/*var span = document.createElement("span");
 	span.style.color = "white";
 	span.textContent = "9. ";
