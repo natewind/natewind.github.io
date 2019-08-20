@@ -127,7 +127,12 @@ ul { padding-left: 40px; }
 {
 	position: relative;
 	float: right;
-	right: 225px;
+	right: 185px;
+}
+
+#stepik > li:nth-child(10) > a > span
+{
+	margin-left: 8.72px;
 }
 
 #stepik > li > a:before
