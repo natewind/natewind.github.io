@@ -97,6 +97,8 @@ ul { padding-left: 40px; }
 	--padding: 8px;
 }
 
+html[lang="en"] #header { padding-top: 32px; }
+
 #name, #job { margin: 0; }
 
 #name
@@ -130,6 +132,7 @@ ul { padding-left: 40px; }
 	right: 180px;
 }
 
+/* TEMPORARY */
 #stepik > li:nth-child(10) > a > span
 {
 	margin-left: 8.72px;
