@@ -132,12 +132,6 @@ html[lang="en"] #header { padding-top: 32px; }
 	right: 180px;
 }
 
-/* TEMPORARY */
-#stepik > li:nth-child(10) > a > span
-{
-	margin-left: 8.72px;
-}
-
 #stepik > li > a:before
 {
 	display: inline-block;
