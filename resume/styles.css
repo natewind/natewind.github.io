@@ -35,12 +35,14 @@ a > span
 {
 	color: #008ace;
 	border-bottom: 1px solid #b2ccf0;
-	padding-bottom: 2px;
+	padding-bottom: 1px;
 }
 
 p, ul {	margin-bottom: 16px; }
 
 ul { padding-left: 40px; }
+
+li { margin-bottom: 2px; }
 
 .strong { font-weight: bold; }
 
@@ -72,6 +74,11 @@ ul { padding-left: 40px; }
 	display: inline-block;
 	margin: 2px 7px 0px 0px;
 	width: 16px;
+}
+
+#contacts > a > span
+{
+	padding-bottom: 2px;
 }
 
 #phone:before    { content: url("../pics/phone.svg");  }
