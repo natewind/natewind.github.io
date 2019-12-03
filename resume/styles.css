@@ -76,11 +76,6 @@ li { margin-bottom: 2px; }
 	width: 16px;
 }
 
-#contacts > a > span
-{
-	padding-bottom: 2px;
-}
-
 #phone:before    { content: url("../pics/phone.svg");  }
 #email:before    { content: url("../pics/gmail.svg");    }
 #github:before   { content: url("../pics/github.svg");   }
@@ -90,6 +85,7 @@ li { margin-bottom: 2px; }
 #contacts > a > span
 {
 	vertical-align: top;
+	padding-bottom: 2px;
 	font-family: "Ubuntu", "Ubuntu Local", sans-serif;
 	font-size: 15px;
 }
