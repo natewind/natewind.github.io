@@ -31,6 +31,14 @@ page
 	width: 809px;
 }
 
+header
+{
+	--height: 141px;
+	min-height: var(--height);
+	margin-bottom: 27px;
+	font-size: 0;
+}
+
 a > span
 {
 	color: #008ace;
@@ -45,14 +53,6 @@ ul { padding-left: 40px; }
 li { margin-bottom: 2px; }
 
 .strong { font-weight: bold; }
-
-#top
-{
-	--height: 141px;
-	min-height: var(--height);
-	margin-bottom: 27px;
-	font-size: 0;
-}
 
 #contacts
 {
@@ -90,7 +90,7 @@ li { margin-bottom: 2px; }
 	font-size: 15px;
 }
 
-#header
+#title
 {
 	width: 243px;
 	margin: 0 auto;
@@ -100,7 +100,7 @@ li { margin-bottom: 2px; }
 	--padding: 8px;
 }
 
-html[lang="en"] #header { padding-top: 32px; }
+html[lang="en"] #title { padding-top: 32px; }
 
 #name, #job { margin: 0; }
 
@@ -195,7 +195,7 @@ html[lang="en"] #header { padding-top: 32px; }
 		padding: 30px 20px 30px 30px;
 	}
 
-	#top { text-align: center; }
+	header { text-align: center; }
 
 	#photo, #contacts
 	{
