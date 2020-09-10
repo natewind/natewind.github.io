@@ -32,26 +32,19 @@
 		 x="0"
 		 y="0"
 		 id="rect0"
-		 style="fill:#4285f4;fill-opacity:1;fill-rule:nonzero;stroke:none" />
+		 style="fill:#0f9d58;fill-opacity:1;fill-rule:nonzero;stroke:none" />
 	<rect
-		 width="10"
-		 height="2"
-		 x="3"
-		 y="3"
+		 width="2"
+		 height="12"
+		 x="5"
+		 y="2"
 		 id="rect1"
 		 style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none" />
 	<rect
-		 width="10"
+		 width="12"
 		 height="2"
-		 x="3"
-		 y="7"
+		 x="2"
+		 y="5"
 		 id="rect2"
-		 style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none" />
-	<rect
-		 width="7"
-		 height="2"
-		 x="3"
-		 y="11"
-		 id="rect4"
 		 style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none" />
 </svg>
