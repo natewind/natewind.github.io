@@ -174,12 +174,12 @@ html[lang="en"] #title { padding-top: 32px; }
 
 @media screen and (min-resolution: 150dpi)
 {
-	#button { --size: 1.7in; }
+	/*#button { --size: 1.7in; }*/
 }
 
 @media screen and (min-resolution: 150dpi) and (orientation: landscape)
 {
-	#button { --size: 1.1in; }
+	/*#button { --size: 1.1in; }*/
 }
 
 @media only screen and (max-width: 825px)
