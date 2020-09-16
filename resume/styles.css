@@ -128,14 +128,14 @@ html[lang="en"] #title { padding-top: 32px; }
 
 #stepik > li { margin-bottom: 10px; }
 
-#stepik > li > a
+.course > a
 {
 	position: relative;
 	float: right;
 	right: 180px;
 }
 
-#stepik > li > a:before
+.course > a:before
 {
 	display: inline-block;
 	margin: 3px 7px 0px 0px;
@@ -195,29 +195,51 @@ html[lang="en"] #title { padding-top: 32px; }
 		padding: 30px 20px 30px 30px;
 	}
 
-	header { text-align: center; }
+	header
+	{
+		display: grid;
+		grid-template-areas: "title title" "photo contacts";
+		align-items: center;
+	}
 
-	#photo, #contacts
+	#title
+	{
+		grid-area: title;
+		margin-bottom: 16px;
+	}
+
+	#photo
 	{
 		float: none;
-		display: inline-block;
+		grid-area: photo;
+		text-align: right;
 	}
 
-	#contacts { margin-left: 12px; }
-
-	#stepik > li > a > span { display: none; }
-
-	#stepik
+	#contacts
 	{
-		list-style-type: none;
-		padding-left: 17px;
+		float: none;
+		grid-area: contacts;
+		margin-left: 12px;
 	}
 
-	#stepik > li > a
+	.course
 	{
-		float: left;
-		clear: left;
-		right: 0;
+		display: grid;
+		grid-template-areas: "name status";
+	}
+
+	.course > span
+	{
+		grid-area: name;
+	}
+
+	.course > a
+	{
+		grid-area: status;
+		position: static;
+		float: none;
+		justify-self: end;
+		margin-left: 12px;
 	}
 }
 
