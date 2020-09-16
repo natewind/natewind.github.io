@@ -150,7 +150,7 @@ html[lang="en"] #title { padding-top: 32px; }
 	position: fixed;
 	right: 60px;
 	bottom: 50px;
-	--size: 54px;
+	--size: 1.43cm;
 	/*--size: 5.1vw;*/
 	width: var(--size);
 	height: var(--size);
