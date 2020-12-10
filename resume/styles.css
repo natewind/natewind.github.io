@@ -33,7 +33,7 @@ page
 
 header
 {
-	--height: 141px;
+	--height: 118px;
 	min-height: var(--height);
 	margin-bottom: 27px;
 	font-size: 0;
@@ -57,7 +57,7 @@ li { margin-bottom: 2px; }
 #contacts
 {
 	float: left;
-	margin-top: 6px;
+	margin-top: 8px;
 }
 
 #contacts > a
@@ -76,11 +76,10 @@ li { margin-bottom: 2px; }
 	width: 16px;
 }
 
-#phone:before    { content: url("../pics/phone.svg");  }
-#email:before    { content: url("../pics/gmail.svg");    }
-#github:before   { content: url("../pics/github.svg");   }
 #telegram:before { content: url("../pics/telegram.svg"); }
-#vk:before       { content: url("../pics/vk.svg");       }
+#github:before   { content: url("../pics/github.svg");   }
+#email:before    { content: url("../pics/gmail.svg");    }
+#phone:before    { content: url("../pics/phone.svg");    }
 
 #contacts > a > span
 {
@@ -94,13 +93,13 @@ li { margin-bottom: 2px; }
 {
 	width: 243px;
 	margin: 0 auto;
-	padding-top: 15px;
+	padding-top: 12px;
 	text-align: center;
 	font-family: "PT Serif", "PT Serif Local", serif;
 	--padding: 8px;
 }
 
-html[lang="en"] #title { padding-top: 32px; }
+html[lang="en"] #title { padding-top: 26px; }
 
 #name, #job { margin: 0; }
 
