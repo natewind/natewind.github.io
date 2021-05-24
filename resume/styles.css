@@ -78,7 +78,7 @@ li { margin-bottom: 2px; }
 
 #telegram:before { content: url("../pics/telegram.svg"); }
 #github:before   { content: url("../pics/github.svg");   }
-#email:before    { content: url("../pics/gmail.svg");    }
+#email:before    { content: url("../pics/email.svg");    }
 #phone:before    { content: url("../pics/phone.svg");    }
 
 #contacts > a > span
