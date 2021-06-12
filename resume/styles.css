@@ -54,13 +54,14 @@ li { margin-bottom: 2px; }
 
 .strong { font-weight: bold; }
 
-#contacts
+address
 {
 	float: left;
 	margin-top: 8px;
+	font-style: normal;
 }
 
-#contacts > a
+address > a
 {
 	display: inline-block;
 	margin-bottom: 9px;
@@ -69,7 +70,7 @@ li { margin-bottom: 2px; }
 	clear: left;
 }
 
-#contacts > a:before
+address > a:before
 {
 	display: inline-block;
 	margin: 2px 7px 0px 0px;
@@ -81,7 +82,7 @@ li { margin-bottom: 2px; }
 #email:before    { content: url("../pics/email.svg");    }
 #phone:before    { content: url("../pics/phone.svg");    }
 
-#contacts > a > span
+address > a > span
 {
 	vertical-align: top;
 	padding-bottom: 2px;
@@ -214,7 +215,7 @@ html[lang="en"] #title { padding-top: 26px; }
 		text-align: right;
 	}
 
-	#contacts
+	address
 	{
 		float: none;
 		grid-area: contacts;
