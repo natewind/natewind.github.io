@@ -27,7 +27,7 @@ page
 	border-image: url("../pics/shadow.png") 9 repeat;
 	overflow: hidden;
 	padding: 64px;
-	height: 1140px;
+	min-height: 1140px;
 	width: 809px;
 }
 
