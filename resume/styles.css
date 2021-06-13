@@ -45,13 +45,25 @@ a > span
 	padding-bottom: 1px;
 }
 
-p, ul { margin-bottom: 16px; }
+h2, p, ul { margin-bottom: 16px; }
+
+h2
+{
+	display: inline-block;
+	font-size: inherit;
+}
+
+h2 + p
+{
+	display: inline;
+	white-space: pre-line;
+}
+
+h2 + p::after { content: "\a"; }
 
 ul { padding-left: 40px; }
 
 li { margin-bottom: 2px; }
-
-.strong { font-weight: bold; }
 
 address
 {
