@@ -115,7 +115,7 @@ small
 
 #photo { float: right; }
 
-#photo > img
+#photo
 {
 	max-height: var(--height);
 	border-radius: 8px;
@@ -207,7 +207,7 @@ small
 	{
 		float: none;
 		grid-area: photo;
-		text-align: right;
+		justify-self: right;
 	}
 
 	address
