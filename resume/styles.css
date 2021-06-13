@@ -45,7 +45,7 @@ a > span
 	padding-bottom: 1px;
 }
 
-p, ul {	margin-bottom: 16px; }
+p, ul { margin-bottom: 16px; }
 
 ul { padding-left: 40px; }
 
@@ -241,7 +241,7 @@ small
 #print:hover  { background-color: #008000; }
 #print:active { background-color: #006000; }*/
 
-@page {	margin: 0; }
+@page { margin: 0; }
 
 @media print
 {
