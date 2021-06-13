@@ -90,30 +90,25 @@ address > a > span
 	font-size: 15px;
 }
 
-#title
+h1
 {
 	width: 243px;
 	margin: 0 auto;
-	padding-top: 12px;
+	padding-top: 12px; /* TODO: Replace with margin after grid/flex */
 	text-align: center;
 	font-family: "PT Serif", "PT Serif Local", serif;
-	--padding: 8px;
-}
-
-html[lang="en"] #title { padding-top: 26px; }
-
-#name, #job { margin: 0; }
-
-#name
-{
-	padding-bottom: var(--padding);
-	border-bottom: 1px solid black;
+	font-weight: normal;
 	font-size: 22px;
 }
 
-#job
+html[lang="en"] h1 { padding-top: 26px; }
+
+small
 {
-	padding-top: var(--padding);
+	display: block;
+	margin-top: 8px;
+	border-top: 1px solid black;
+	padding-top: 8px;
 	font-style: italic;
 	font-size: 16px;
 }
@@ -202,7 +197,7 @@ html[lang="en"] #title { padding-top: 26px; }
 		align-items: center;
 	}
 
-	#title
+	h1
 	{
 		grid-area: title;
 		margin-bottom: 16px;
