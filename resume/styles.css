@@ -124,9 +124,16 @@ h2.inline
 
 h2.inline::after { content: "\a0"; }
 
-ul { padding-left: 40px; }
+ul { padding-left: 30px; }
 
-li { margin-bottom: 2px; }
+li { margin-bottom: 2px; padding-left: 10px; }
+
+li::marker
+{
+	display: inline-block;
+	content: "⋄";
+	width: 10px;
+}
 
 #stepik > li { margin-bottom: 10px; }
 
