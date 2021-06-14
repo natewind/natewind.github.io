@@ -47,19 +47,15 @@ a > span
 
 h2, p, ul { margin-bottom: 16px; }
 
-h2
+h2 { font-size: inherit; }
+
+h2.inline
 {
-	display: inline-block;
-	font-size: inherit;
+	float: left;
+	margin: 0;
 }
 
-h2 + p
-{
-	display: inline;
-	white-space: pre-line;
-}
-
-h2 + p::after { content: "\a"; }
+h2.inline::after { content: "\a0"; }
 
 ul { padding-left: 40px; }
 
