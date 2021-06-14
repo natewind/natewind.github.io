@@ -66,7 +66,7 @@ small
 {
 	grid-area: photo;
 	justify-self: right;
-	max-width: 100%;
+	max-width: 50vh;
 	max-height: 100%;
 	border-radius: 8px;
 }
@@ -200,7 +200,7 @@ li { margin-bottom: 2px; }
 	header
 	{
 		grid-template-areas: "title title" "photo contacts";
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: initial;
 		grid-template-rows: auto 118px;
 		margin-right: 10px;
 	}
