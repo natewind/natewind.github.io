@@ -87,7 +87,7 @@ address > a
 {
 	display: block;
 	width: max-content;
-	margin-bottom: 9px;
+	margin-bottom: 7px;
 }
 
 address > a:before
@@ -104,10 +104,12 @@ address > a:before
 
 address > a > span
 {
+	display: inline-block;
 	vertical-align: top;
 	padding-bottom: 2px;
 	font-family: "Ubuntu", "Ubuntu Local", sans-serif;
 	font-size: 15px;
+	line-height: 17px;
 }
 
 h2, p, ul { margin-bottom: 16px; }
