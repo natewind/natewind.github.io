@@ -92,6 +92,7 @@ address > a
 
 address > a:before
 {
+	content: var(--icon);
 	display: inline-block;
 	margin: 2px 7px 0px 0px;
 	width: 16px;
@@ -102,14 +103,17 @@ address > a:before
 #email:before    { content: url("../pics/email.svg");    }
 #phone:before    { content: url("../pics/phone.svg");    }
 
-address > a > span
+address > a::after
 {
+	content: attr(data-text);
 	display: inline-block;
 	vertical-align: top;
+	border-bottom: 1px solid #b2ccf0;
 	padding-bottom: 2px;
 	font-family: "Ubuntu", "Ubuntu Local", sans-serif;
 	font-size: 15px;
 	line-height: 17px;
+	color: #008ace;
 }
 
 h2, p, ul { margin-bottom: 16px; }
