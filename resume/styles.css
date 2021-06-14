@@ -200,7 +200,7 @@ li { margin-bottom: 2px; }
 	header
 	{
 		grid-template-areas: "title title" "photo contacts";
-		grid-template-columns: none;
+		grid-template-columns: 1fr 1fr;
 		grid-template-rows: auto 118px;
 		margin-right: 10px;
 	}
