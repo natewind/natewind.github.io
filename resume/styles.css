@@ -32,6 +32,9 @@ section
 
 header
 {
+	display: grid;
+	grid-template-areas: "contacts title photo";
+	grid-template-columns: 1fr auto 1fr;
 	--height: 118px;
 	min-height: var(--height);
 	margin-bottom: 27px;
@@ -63,7 +66,7 @@ li { margin-bottom: 2px; }
 
 address
 {
-	float: left;
+	grid-area: contacts;
 	margin-top: 8px;
 	font-style: normal;
 }
@@ -99,16 +102,15 @@ address > a > span
 
 h1
 {
+	grid-area: title;
+	justify-self: center;
+	align-self: center;
 	width: 243px;
-	margin: 0 auto;
-	padding-top: 12px; /* TODO: Replace with margin after grid/flex */
 	text-align: center;
 	font-family: "PT Serif", "PT Serif Local", serif;
 	font-weight: normal;
 	font-size: 22px;
 }
-
-html[lang="en"] h1 { padding-top: 26px; }
 
 small
 {
@@ -120,10 +122,10 @@ small
 	font-size: 16px;
 }
 
-#photo { float: right; }
-
 #photo
 {
+	grid-area: photo;
+	justify-self: right;
 	max-height: var(--height);
 	border-radius: 8px;
 }
@@ -199,30 +201,14 @@ small
 
 	header
 	{
-		display: grid;
 		grid-template-areas: "title title" "photo contacts";
-		align-items: center;
+		grid-template-columns: none;
+		margin-right: 10px;
 	}
 
-	h1
-	{
-		grid-area: title;
-		margin-bottom: 16px;
-	}
+	h1 { margin-bottom: 16px; }
 
-	#photo
-	{
-		float: none;
-		grid-area: photo;
-		justify-self: right;
-	}
-
-	address
-	{
-		float: none;
-		grid-area: contacts;
-		margin-left: 12px;
-	}
+	address { margin-left: 12px; }
 
 	.course
 	{
