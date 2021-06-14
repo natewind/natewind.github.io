@@ -69,7 +69,7 @@ small
 	border-radius: 8px;
 }
 
-a > span
+li > a
 {
 	color: #008ace;
 	border-bottom: 1px solid #b2ccf0;
@@ -90,7 +90,7 @@ address > a
 	margin-bottom: 7px;
 }
 
-address > a:before
+address > a::before
 {
 	content: var(--icon);
 	display: inline-block;
@@ -98,10 +98,10 @@ address > a:before
 	width: 16px;
 }
 
-#telegram:before { content: url("../pics/telegram.svg"); }
-#github:before   { content: url("../pics/github.svg");   }
-#email:before    { content: url("../pics/email.svg");    }
-#phone:before    { content: url("../pics/phone.svg");    }
+#telegram::before { content: url("../pics/telegram.svg"); }
+#github::before   { content: url("../pics/github.svg");   }
+#email::before    { content: url("../pics/email.svg");    }
+#phone::before    { content: url("../pics/phone.svg");    }
 
 address > a::after
 {
@@ -151,13 +151,21 @@ li::marker
 	right: 180px;
 }
 
-.course > a:before
+.course > a::before
 {
 	display: inline-block;
 	margin: 3px 7px 0px 0px;
 	content: url("../pics/stepik.svg");
 	vertical-align: top;
 	width: 16px;
+}
+
+.course > a::after
+{
+	content: "100%";
+	color: #008ace;
+	border-bottom: 1px solid #b2ccf0;
+	padding-bottom: 1px;
 }
 
 #print
