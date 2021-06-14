@@ -132,7 +132,6 @@ li::marker
 {
 	display: inline-block;
 	content: "⋄";
-	width: 10px;
 }
 
 #stepik > li { margin-bottom: 10px; }
