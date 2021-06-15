@@ -182,20 +182,23 @@ li::marker
 	border-radius: 50%;
 	background-color: white;
 	/*background-color: navy;*/
-	background-image: url("../pics/print_green.svg");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: auto 46%;
 	box-shadow: 0 0 6px rgba(0, 0, 0, 0.14), 0 6px 12px rgba(0, 0, 0, 0.28);
 }
 
-#print:hover
+#print::after
 {
-	/* TODO: Replace the separate picture with a filter */
-	/* if possible without additional non-semantic tags */
-	background-color: #007000;
-	background-image: url("../pics/print_white.svg");
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-image: url("../pics/print.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: auto 46%;
 }
+
+#print:hover        { background-color: #007000;       }
+#print:hover::after { filter: brightness(0) invert(1); }
 
 @media screen and (min-resolution: 150dpi)
 {
@@ -272,10 +275,7 @@ li::marker
 		border-image: none;
 	}
 
-	#print
-	{
-		display: none;
-	}
+	#print { display: none; }
 }
 
 @font-face
