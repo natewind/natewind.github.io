@@ -68,7 +68,8 @@ small
 	border-radius: 8px;
 }
 
-li > a
+li:not(.course) > a,
+.course > a::after
 {
 	color: #008ace;
 	border-bottom: 1px solid #b2ccf0;
@@ -143,7 +144,7 @@ li::marker
 	content: "⋄";
 }
 
-#stepik > li { margin-bottom: 10px; }
+.course { margin-bottom: 10px; }
 
 .course > a
 {
@@ -155,19 +156,13 @@ li::marker
 .course > a::before
 {
 	display: inline-block;
-	margin: 3px 7px 0px 0px;
+	margin: 3px 7px 0px 12px;
 	content: url("../pics/stepik.svg");
 	vertical-align: top;
 	width: 16px;
 }
 
-.course > a::after
-{
-	content: "100%";
-	color: #008ace;
-	border-bottom: 1px solid #b2ccf0;
-	padding-bottom: 1px;
-}
+.course > a::after { content: "100%"; }
 
 #print
 {
@@ -220,7 +215,7 @@ li::marker
 		height: auto;
 		margin: 0;
 		border: 0;
-		padding: 30px 20px 30px 30px;
+		padding: 20px 20px 20px 20px;
 	}
 
 	header
@@ -234,25 +229,9 @@ li::marker
 
 	address { margin-left: 12px; }
 
-	.course
-	{
-		display: grid;
-		grid-template-areas: "name status";
-	}
+	ul { padding-left: 20px; }
 
-	.course > span
-	{
-		grid-area: name;
-	}
-
-	.course > a
-	{
-		grid-area: status;
-		position: static;
-		float: none;
-		justify-self: end;
-		margin-left: 12px;
-	}
+	.course > a { right: 0; }
 }
 
 /*Experimental:
