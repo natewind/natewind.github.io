@@ -138,11 +138,7 @@ li
 	padding-left: 10px;
 }
 
-li::marker
-{
-	display: inline-block;
-	content: "⋄";
-}
+li::marker { content: "⋄"; }
 
 .course { margin-bottom: 10px; }
 
