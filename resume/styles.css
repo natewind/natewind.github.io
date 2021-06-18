@@ -225,7 +225,7 @@ li::marker { content: "⋄"; }
 
 	address { margin-left: 12px; }
 
-	ul { padding-left: 20px; }
+	ul { padding-left: 10px; }
 
 	.course > a { right: 0; }
 }
