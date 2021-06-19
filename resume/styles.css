@@ -159,7 +159,7 @@ li::marker { content: "⋄"; }
 
 .course > a::after { content: "100%"; }
 
-#print
+#print-button
 {
 	display: block;
 	position: fixed;
@@ -174,7 +174,7 @@ li::marker { content: "⋄"; }
 	box-shadow: 0 0 6px rgba(0, 0, 0, 0.14), 0 6px 12px rgba(0, 0, 0, 0.28);
 }
 
-#print::after
+#print-button::after
 {
 	content: "";
 	position: absolute;
@@ -187,17 +187,17 @@ li::marker { content: "⋄"; }
 	background-size: auto 46%;
 }
 
-#print:hover        { background-color: #007000;       }
-#print:hover::after { filter: brightness(0) invert(1); }
+#print-button:hover        { background-color: #007000;       }
+#print-button:hover::after { filter: brightness(0) invert(1); }
 
 @media screen and (min-resolution: 150dpi)
 {
-	/*#print { --size: 1.7in; }*/
+	/*#print-button { --size: 1.7in; }*/
 }
 
 @media screen and (min-resolution: 150dpi) and (orientation: landscape)
 {
-	/*#print { --size: 1.1in; }*/
+	/*#print-button { --size: 1.1in; }*/
 }
 
 @media only screen and (max-width: 825px)
@@ -245,7 +245,7 @@ li::marker { content: "⋄"; }
 		border-image: none;
 	}
 
-	#print { display: none; }
+	#print-button { display: none; }
 }
 
 @font-face
