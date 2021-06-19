@@ -242,7 +242,7 @@ li::marker { content: "⋄"; }
 	section
 	{
 		margin: 0;
-		border-image: none;
+		border: 0;
 	}
 
 	#print-button { display: none; }
