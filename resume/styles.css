@@ -144,9 +144,8 @@ li::marker { content: "⋄"; }
 
 .course > a
 {
-	position: relative;
 	float: right;
-	right: 180px;
+	margin-right: 120px;
 }
 
 .course > a::before
@@ -227,7 +226,7 @@ li::marker { content: "⋄"; }
 
 	ul { padding-left: 10px; }
 
-	.course > a { right: 0; }
+	.course > a { margin-right: 0; }
 }
 
 /*Experimental:
