@@ -74,7 +74,7 @@ small
 #courses > li > a::after,
 ul:not(#courses) > li > a
 {
-	color: #008ace !important;
+	color: #008ace;
 	border-bottom: 1px solid #b2ccf0;
 	padding-bottom: 1px;
 }
