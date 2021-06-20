@@ -177,6 +177,8 @@ li::marker { content: "⋄"; }
 	box-shadow: 0 2px 2px  0   rgb(0 0 0 / 14%),
 	            0 3px 1px -2px rgb(0 0 0 / 12%),
 	            0 1px 5px  0   rgb(0 0 0 / 20%);
+	--whitewash: brightness(0) invert(1);
+	--green: #007000;
 }
 
 #print-button::after
@@ -192,8 +194,8 @@ li::marker { content: "⋄"; }
 	background-size: auto 46%;
 }
 
-#print-button:hover        { background-color: #007000;       }
-#print-button:hover::after { filter: brightness(0) invert(1); }
+#print-button:hover { background-color: var(--green); }
+#print-button:hover::after { filter: var(--whitewash); }
 
 @media screen and (min-resolution: 150dpi)
 {
@@ -235,8 +237,8 @@ li::marker { content: "⋄"; }
 
 	#courses > li > a { margin-left: 12px; }
 
-	#print-button        { background-color: #007000;       }
-	#print-button::after { filter: brightness(0) invert(1); }
+	#print-button { background-color: var(--green); }
+	#print-button::after { filter: var(--whitewash); }
 }
 
 @page { margin: 0; }
