@@ -24,7 +24,7 @@ section
 	background: white;
 	box-sizing: border-box;
 	background-clip: padding-box;
-	margin: 0px auto 25px auto;
+	margin: 0 auto 25px auto;
 	border: var(--border-size) solid transparent;
 	border-image: url("../pics/shadow.png") 9 repeat;
 	overflow: hidden;
@@ -98,7 +98,7 @@ address > a
 address > a::before
 {
 	display: inline-block;
-	margin: 2px 7px 0px 0px;
+	margin: 2px 7px 0 0;
 	width: 16px;
 }
 
@@ -150,13 +150,13 @@ li::marker { content: "⋄"; }
 .course > a
 {
 	float: right;
-	margin-right: 120px;
+	margin: 0 120px 0 12px;
 }
 
 .course > a::before
 {
 	display: inline-block;
-	margin: 3px 7px 0px 12px;
+	margin: 3px 7px 0 0;
 	content: url("../pics/stepik.svg");
 	vertical-align: top;
 	width: 16px;
