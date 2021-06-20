@@ -6,17 +6,17 @@
 	text-decoration: none;
 }
 
-/* FINISHED ^^^ */
-
 body
 {
 	padding-top: 25px;
 	background-color: #404040;
 	background-attachment: fixed;
 	background-image: url("../pics/texture.png");
-	font-size: 0;
 	font-family: "PT Sans", "PT Sans Web", sans-serif;
+	font-size: 0;
 }
+
+/* FINISHED ^^^ */
 
 section
 {
