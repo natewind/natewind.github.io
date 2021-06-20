@@ -237,7 +237,13 @@ li::marker { content: "⋄"; }
 
 	#courses > li > a { margin-left: 12px; }
 
-	#print-button { background-color: var(--green); }
+	#print-button
+	{
+		right: 25px;
+		bottom: 25px;
+		background-color: var(--green);
+	}
+
 	#print-button::after { filter: var(--whitewash); }
 }
 
