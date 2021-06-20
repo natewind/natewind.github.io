@@ -9,11 +9,8 @@
 body
 {
 	padding-top: 25px;
-	background-color: #404040;
-	background-attachment: fixed;
-	background-image: url("../pics/texture.png");
-	font-family: "PT Sans", "PT Sans Web", sans-serif;
-	font-size: 0;
+	background: fixed #404040 url("../pics/texture.png");
+	font: 0 "PT Sans", "PT Sans Web", sans-serif;
 }
 
 section
@@ -42,13 +39,11 @@ h1
 	place-self: center;
 	width: 243px;
 	text-align: center;
+	line-height: 28px;
+	font-size: 22px;
 	font-family: "PT Serif", "PT Serif Web", serif;
 	font-weight: normal;
-	font-size: 22px;
-	line-height: 28px;
 }
-
-/* FINISHED ^^^ */
 
 small
 {
@@ -56,10 +51,12 @@ small
 	margin-top: 8px;
 	border-top: 1px solid black;
 	padding-top: 8px;
-	font-style: italic;
-	font-size: 16px;
 	line-height: 20px;
+	font-size: 16px;
+	font-style: italic;
 }
+
+/* FINISHED ^^^ */
 
 #photo
 {
