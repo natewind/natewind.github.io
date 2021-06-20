@@ -223,6 +223,8 @@ li::marker { content: "⋄"; }
 
 	address { margin-left: var(--icon-margin); }
 
+	h2, p, ul { line-height: 22px; }
+
 	ul { padding-left: 15px; }
 
 	#courses { max-width: initial; }
