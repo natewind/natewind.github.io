@@ -16,32 +16,31 @@ body
 	font-size: 0;
 }
 
-/* FINISHED ^^^ */
-
 section
 {
 	--padding: 64px;
-	background: white;
-	background-clip: padding-box;
 	margin: 0 auto 25px auto;
 	border: 9px solid transparent;
 	border-image: url("../pics/shadow.png") 9 repeat;
 	padding: var(--padding);
 	width: calc(210mm - 2 * var(--padding));
 	height: calc(297mm - 2 * var(--padding));
+	background: padding-box white;
 }
 
 header
 {
 	display: grid;
-	grid-template-areas: "contacts title photo";
+	grid-template-areas: "contacts name photo";
 	grid-template-columns: 1fr auto 1fr;
 	margin-bottom: 27px;
 }
 
+/* FINISHED ^^^ */
+
 h1
 {
-	grid-area: title;
+	grid-area: name;
 	justify-self: center;
 	align-self: center;
 	width: 243px;
@@ -213,7 +212,7 @@ li::marker { content: "⋄"; }
 
 	header
 	{
-		grid-template-areas: "title title" "photo contacts";
+		grid-template-areas: "name name" "photo contacts";
 		grid-template-columns: initial;
 	}
 
