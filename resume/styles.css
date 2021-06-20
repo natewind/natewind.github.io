@@ -80,7 +80,7 @@ ul:not(#courses) > li > a
 address
 {
 	grid-area: contacts;
-	margin-top: 7px;
+	margin-top: 8px;
 	font-style: normal;
 }
 
