@@ -27,7 +27,6 @@ section
 	margin: 0 auto 25px auto;
 	border: var(--border-size) solid transparent;
 	border-image: url("../pics/shadow.png") 9 repeat;
-	overflow: hidden;
 	padding: 64px;
 	width: calc(var(--a4-width) + 2 * var(--border-size));
 	height: calc(var(--a4-height) + 2 * var(--border-size));
