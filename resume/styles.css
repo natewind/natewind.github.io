@@ -18,16 +18,19 @@ body
 
 section
 {
+	--a4-width: 210mm;
+	--a4-height: 297mm;
+	--border-size: 9px;
 	background: white;
 	box-sizing: border-box;
 	background-clip: padding-box;
 	margin: 0px auto 25px auto;
-	border: 9px solid transparent;
+	border: var(--border-size) solid transparent;
 	border-image: url("../pics/shadow.png") 9 repeat;
 	overflow: hidden;
 	padding: 64px;
-	min-height: 1140px;
-	width: 809px;
+	width: calc(var(--a4-width) + 2 * var(--border-size));
+	height: calc(var(--a4-height) + 2 * var(--border-size));
 }
 
 header
@@ -48,6 +51,7 @@ h1
 	font-family: "PT Serif", "PT Serif Local", serif;
 	font-weight: normal;
 	font-size: 22px;
+	line-height: 28px;
 }
 
 small
@@ -58,6 +62,7 @@ small
 	padding-top: 8px;
 	font-style: italic;
 	font-size: 16px;
+	line-height: 20px;
 }
 
 #photo
@@ -92,7 +97,6 @@ address > a
 
 address > a::before
 {
-	content: var(--icon);
 	display: inline-block;
 	margin: 2px 7px 0px 0px;
 	width: 16px;
@@ -120,6 +124,7 @@ h2, p, ul
 {
 	margin-bottom: 16px;
 	font-size: 16px;
+	line-height: 20px;
 }
 
 h2.inline
@@ -233,16 +238,14 @@ li::marker { content: "⋄"; }
 
 @media print
 {
-	body
-	{
-		background: white;
-		padding-top: 0;
-	}
+	body { padding: 0; }
 
 	section
 	{
 		margin: 0;
 		border: 0;
+		width: var(--a4-width);
+		height: var(--a4-height);
 	}
 
 	#print-button { display: none; }
