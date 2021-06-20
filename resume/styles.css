@@ -224,7 +224,6 @@ li::marker { content: "⋄"; }
 	{
 		grid-template-areas: "title title" "photo contacts";
 		grid-template-columns: initial;
-		margin-right: 10px;
 	}
 
 	h1 { margin-bottom: 16px; }
