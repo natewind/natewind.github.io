@@ -36,13 +36,10 @@ header
 	margin-bottom: 27px;
 }
 
-/* FINISHED ^^^ */
-
 h1
 {
 	grid-area: name;
-	justify-self: center;
-	align-self: center;
+	place-self: center;
 	width: 243px;
 	text-align: center;
 	font-family: "PT Serif", "PT Serif Web", serif;
@@ -50,6 +47,8 @@ h1
 	font-size: 22px;
 	line-height: 28px;
 }
+
+/* FINISHED ^^^ */
 
 small
 {
