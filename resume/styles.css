@@ -27,8 +27,8 @@ section
 	border: 9px solid transparent;
 	border-image: url("../pics/shadow.png") 9 repeat;
 	padding: var(--padding);
-	width: calc(210mm - 2 * var(--padding));
-	height: calc(297mm - 2 * var(--padding));
+	width: calc(210mm - 2 * var(--padding) );
+	height: calc(297mm - 2 * var(--padding) );
 }
 
 header
