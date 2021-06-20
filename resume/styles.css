@@ -10,6 +10,9 @@ body
 {
 	--page-margin: 25px;
 	--page-shadow: 9px;
+	--inner-margin: 16px;
+	--button-size: 1.5cm;
+	--button-position: calc(var(--page-margin) + var(--page-shadow));
 	padding-top: var(--page-margin);
 	background: fixed #404040 url("../pics/texture.png");
 	font: 0 "PT Sans", "PT Sans Web", sans-serif;
@@ -115,7 +118,7 @@ address > a::after
 
 h2, p, ul
 {
-	margin-bottom: 16px;
+	margin-bottom: var(--inner-margin);
 	line-height: 20px;
 	font-size: 16px;
 }
@@ -138,8 +141,8 @@ li
 
 li::marker { content: "⋄"; }
 
-#courses      { max-width: max-content; }
-#courses > li { margin-bottom: 10px;    }
+#courses { max-width: max-content; }
+#courses > li { margin-bottom: 10px; }
 
 #courses > li > a
 {
@@ -160,36 +163,29 @@ li::marker { content: "⋄"; }
 
 #print-button
 {
-	--size: 1.5cm;
-	--position: calc(var(--page-margin) + var(--page-shadow));
 	--whitewash: brightness(0) invert(1);
 	--green: #007000;
 	display: block;
 	position: fixed;
-	right: var(--position);
-	bottom: var(--position);
+	right: var(--button-position);
+	bottom: var(--button-position);
 	border-radius: 50%;
-	width: var(--size);
-	height: var(--size);
+	width: var(--button-size);
+	height: var(--button-size);
 	background-color: white;
 	box-shadow: 0 2px 2px  0   rgb(0 0 0 / 14%),
 	            0 3px 1px -2px rgb(0 0 0 / 12%),
 	            0 1px 5px  0   rgb(0 0 0 / 20%);
 }
 
-/* FINISHED ^^^ */
-
 #print-button::after
 {
 	content: "";
 	position: absolute;
+	border-radius: inherit;
 	width: 100%;
 	height: 100%;
-	border-radius: inherit;
-	background-image: url("../pics/print.svg");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: auto 46%;
+	background: no-repeat url("../pics/print.svg") center / auto 46%;
 }
 
 #print-button:hover { background-color: var(--green); }
@@ -197,15 +193,23 @@ li::marker { content: "⋄"; }
 
 @media only screen and (max-width: 219mm)
 {
-	body { padding-top: 0; }
+	body
+	{
+		--button-position: 20px;
+		padding-top: 0;
+	}
 
 	section
 	{
-		width: auto;
-		height: auto;
+		--icon-margin: 12px;
 		margin: 0;
 		border: 0;
-		padding: 20px 20px calc(1.5cm + 25px) 20px;
+		padding: var(--button-position);
+		padding-bottom: calc(2 * var(--button-position)
+		                       + var(--button-size)
+		                       - var(--inner-margin));
+		width: auto;
+		height: auto;
 	}
 
 	header
@@ -214,27 +218,18 @@ li::marker { content: "⋄"; }
 		grid-template-columns: initial;
 	}
 
-	h1 { margin-bottom: 16px; }
+	h1 { margin-bottom: var(--inner-margin); }
 
-	address { margin-left: 12px; }
+	address { margin-left: var(--icon-margin); }
 
 	ul { padding-left: 15px; }
 
 	#courses { max-width: initial; }
+	#courses > li > a { margin-left: var(--icon-margin); }
 
-	#courses > li > a { margin-left: 12px; }
-
-	#print-button
-	{
-		right: 20px;
-		bottom: 20px;
-		background-color: var(--green);
-	}
-
+	#print-button { background-color: var(--green); }
 	#print-button::after { filter: var(--whitewash); }
 }
-
-/* FINISHED vvv */
 
 @media print
 {
