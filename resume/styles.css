@@ -174,13 +174,16 @@ li::marker { content: "⋄"; }
 	height: var(--size);
 	border-radius: 50%;
 	background-color: white;
-	box-shadow: 0 0 6px rgba(0, 0, 0, 0.14), 0 6px 12px rgba(0, 0, 0, 0.28);
+
+	/*
+	box-shadow: 0 0    6px rgb(0 0 0 / 14%),
+	            0 6px 12px rgb(0 0 0 / 28%);
+	*/
 
 	/* Material */
-	/*box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%), 0 1px 5px 0 rgb(0 0 0 / 20%);*/
-
-	/* From a random website */
-	/*box-shadow: -4px 4px 8px rgb(0 0 0 / 25%);*/
+	box-shadow: 0 2px 2px  0   rgb(0 0 0 / 14%),
+	            0 3px 1px -2px rgb(0 0 0 / 12%),
+	            0 1px 5px  0   rgb(0 0 0 / 20%);
 }
 
 #print-button::after
@@ -209,7 +212,7 @@ li::marker { content: "⋄"; }
 	/*#print-button { --size: 1.1in; }*/
 }
 
-@media only screen and (max-width: 825px)
+@media only screen and (max-width: 219mm)
 {
 	body { padding-top: 0; }
 
@@ -238,6 +241,9 @@ li::marker { content: "⋄"; }
 	#courses { max-width: initial; }
 
 	#courses > li > a { margin-left: 12px; }
+
+	#print-button        { background-color: #007000;       }
+	#print-button::after { filter: brightness(0) invert(1); }
 }
 
 @page { margin: 0; }
