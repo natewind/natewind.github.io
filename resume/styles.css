@@ -197,6 +197,7 @@ li::marker { content: "⋄"; }
 	{
 		--button-position: 20px;
 		padding-top: 0;
+		background: white;
 	}
 
 	section
