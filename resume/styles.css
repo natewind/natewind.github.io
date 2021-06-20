@@ -18,18 +18,15 @@ body
 
 section
 {
-	--a4-width: 210mm;
-	--a4-height: 297mm;
-	--border-size: 9px;
+	--padding: 64px;
 	background: white;
-	box-sizing: border-box;
 	background-clip: padding-box;
 	margin: 0 auto 25px auto;
-	border: var(--border-size) solid transparent;
+	border: 9px solid transparent;
 	border-image: url("../pics/shadow.png") 9 repeat;
-	padding: 64px;
-	width: calc(var(--a4-width) + 2 * var(--border-size));
-	height: calc(var(--a4-height) + 2 * var(--border-size));
+	padding: var(--padding);
+	width: calc(210mm - 2 * var(--padding));
+	height: calc(297mm - 2 * var(--padding));
 }
 
 header
@@ -247,8 +244,6 @@ li::marker { content: "⋄"; }
 	{
 		margin: 0;
 		border: 0;
-		width: var(--a4-width);
-		height: var(--a4-height);
 	}
 
 	#print-button { display: none; }
