@@ -169,7 +169,8 @@ li::marker { content: "⋄"; }
 	right: 60px;
 	bottom: 50px;
 	/*--size: 1.43cm;*/
-	--size: 5.1vw;
+	--size: 1.5cm;
+	/*--size: 5.1vw;*/
 	width: var(--size);
 	height: var(--size);
 	border-radius: 50%;
