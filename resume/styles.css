@@ -175,6 +175,12 @@ li::marker { content: "⋄"; }
 	border-radius: 50%;
 	background-color: white;
 	box-shadow: 0 0 6px rgba(0, 0, 0, 0.14), 0 6px 12px rgba(0, 0, 0, 0.28);
+
+	/* Material */
+	/*box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%), 0 1px 5px 0 rgb(0 0 0 / 20%);*/
+
+	/* From a random website */
+	/*box-shadow: -4px 4px 8px rgb(0 0 0 / 25%);*/
 }
 
 #print-button::after
