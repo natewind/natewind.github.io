@@ -6,6 +6,8 @@
 	text-decoration: none;
 }
 
+/* FINISHED ^^^ */
+
 body
 {
 	padding-top: 25px;
@@ -168,9 +170,7 @@ li::marker { content: "⋄"; }
 	position: fixed;
 	right: calc(25px + 9px);
 	bottom: calc(25px + 9px);
-	/*--size: 1.43cm;*/
 	--size: 1.5cm;
-	/*--size: 5.1vw;*/
 	width: var(--size);
 	height: var(--size);
 	border-radius: 50%;
@@ -197,16 +197,6 @@ li::marker { content: "⋄"; }
 
 #print-button:hover { background-color: var(--green); }
 #print-button:hover::after { filter: var(--whitewash); }
-
-@media screen and (min-resolution: 150dpi)
-{
-	/*#print-button { --size: 1.7in; }*/
-}
-
-@media screen and (min-resolution: 150dpi) and (orientation: landscape)
-{
-	/*#print-button { --size: 1.1in; }*/
-}
 
 @media only screen and (max-width: 219mm)
 {
@@ -246,6 +236,8 @@ li::marker { content: "⋄"; }
 
 	#print-button::after { filter: var(--whitewash); }
 }
+
+/* FINISHED vvv */
 
 @page { margin: 0; }
 
