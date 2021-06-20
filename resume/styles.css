@@ -56,24 +56,6 @@ small
 	font-style: italic;
 }
 
-/* FINISHED ^^^ */
-
-#photo
-{
-	grid-area: photo;
-	justify-self: right;
-	width: 118px;
-	border-radius: 8px;
-}
-
-#courses > li > a::after,
-ul:not(#courses) > li > a
-{
-	color: #008ace;
-	border-bottom: 1px solid #b2ccf0;
-	padding-bottom: 1px;
-}
-
 address
 {
 	grid-area: contacts;
@@ -84,8 +66,8 @@ address
 address > a
 {
 	display: block;
-	width: max-content;
 	margin-bottom: 7px;
+	width: max-content;
 }
 
 address > a::before
@@ -100,18 +82,35 @@ address > a::before
 #email::before    { content: url("../pics/email.svg");    }
 #phone::before    { content: url("../pics/phone.svg");    }
 
+address > a::after,
+#courses > li > a::after,
+ul:not(#courses) > li > a
+{
+	border-bottom: 1px solid #b2ccf0;
+	padding-bottom: 1px;
+	color: #008ace;
+}
+
 address > a::after
 {
 	content: attr(data-text);
 	display: inline-block;
 	vertical-align: top;
-	border-bottom: 1px solid #b2ccf0;
 	padding-bottom: 2px;
-	font-family: "Ubuntu", "Ubuntu Web", sans-serif;
-	font-size: 15px;
 	line-height: 17px;
-	color: #008ace;
+	font-size: 15px;
+	font-family: "Ubuntu", "Ubuntu Web";
 }
+
+#photo
+{
+	grid-area: photo;
+	justify-self: right;
+	border-radius: 8px;
+	width: 116px;
+}
+
+/* FINISHED ^^^ */
 
 h2, p, ul
 {
