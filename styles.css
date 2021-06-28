@@ -14,7 +14,7 @@ body
 	--button-size: 1.5cm;
 	--button-position: calc(var(--page-margin) + var(--page-shadow));
 	padding-top: var(--page-margin);
-	background: fixed #404040 url("../pics/texture.png");
+	background: fixed #404040 url("pics/texture.png");
 	font: 0 "PT Sans", "PT Sans Web", sans-serif;
 }
 
@@ -24,7 +24,7 @@ section
 	--icon-size: 16px;
 	margin: 0 auto var(--page-margin) auto;
 	border: var(--page-shadow) solid transparent;
-	border-image: url("../pics/shadow.png") 9 repeat;
+	border-image: url("pics/shadow.png") 9 repeat;
 	padding: var(--padding);
 	width: calc(210mm - 2 * var(--padding));
 	height: calc(297mm - 2 * var(--padding));
@@ -83,10 +83,10 @@ address > a::before
 	width: var(--icon-size);
 }
 
-#telegram::before { content: url("../pics/telegram.svg"); }
-#github::before   { content: url("../pics/github.svg");   }
-#email::before    { content: url("../pics/email.svg");    }
-#phone::before    { content: url("../pics/phone.svg");    }
+#telegram::before { content: url("pics/telegram.svg"); }
+#github::before   { content: url("pics/github.svg");   }
+#email::before    { content: url("pics/email.svg");    }
+#phone::before    { content: url("pics/phone.svg");    }
 
 address > a::after,
 #courses > li > a::after,
@@ -152,7 +152,7 @@ li::marker { content: "⋄"; }
 
 #courses > li > a::before
 {
-	content: url("../pics/stepik.svg");
+	content: url("pics/stepik.svg");
 	display: inline-block;
 	vertical-align: top;
 	margin: 3px 7px 0 0;
@@ -185,7 +185,7 @@ li::marker { content: "⋄"; }
 	border-radius: inherit;
 	width: 100%;
 	height: 100%;
-	background: no-repeat url("../pics/print.svg") center / auto 46%;
+	background: no-repeat url("pics/print.svg") center / auto 46%;
 }
 
 #print-button:hover { background-color: var(--green); }
@@ -251,33 +251,33 @@ li::marker { content: "⋄"; }
 @font-face
 {
 	font-family: "Ubuntu Web";
-	src: url("../fonts/Ubuntu Regular.ttf");
+	src: url("fonts/Ubuntu Regular.ttf");
 }
 
 @font-face
 {
 	font-family: "PT Sans Web";
-	src: url("../fonts/PT Sans Regular.ttf");
+	src: url("fonts/PT Sans Regular.ttf");
 	font-weight: normal;
 }
 
 @font-face
 {
 	font-family: "PT Sans Web";
-	src: url("../fonts/PT Sans Bold.ttf");
+	src: url("fonts/PT Sans Bold.ttf");
 	font-weight: bold;
 }
 
 @font-face
 {
 	font-family: "PT Serif Web";
-	src: url("../fonts/PT Serif Regular.ttf");
+	src: url("fonts/PT Serif Regular.ttf");
 	font-style: normal;
 }
 
 @font-face
 {
 	font-family: "PT Serif Web";
-	src: url("../fonts/PT Serif Italic.ttf");
+	src: url("fonts/PT Serif Italic.ttf");
 	font-style: italic;
 }
