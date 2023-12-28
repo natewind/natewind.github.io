@@ -1,0 +1,307 @@
+*
+{
+	margin: 0;
+	border: 0;
+	padding: 0;
+	text-decoration: none;
+}
+
+body
+{
+	--page-margin: 25px;
+	--page-shadow: 9px;
+	--inner-margin: 16px;
+	--button-size: 1.5cm;
+	--button-position: calc(var(--page-margin) + var(--page-shadow));
+	padding-top: var(--page-margin);
+	background: fixed #404040 url("images/texture.png");
+	font: 0 "PT Sans", "PT Sans Web", sans-serif;
+}
+
+section
+{
+	--padding: 64px;
+	--icon-size: 16px;
+	margin: 0 auto var(--page-margin) auto;
+	border: var(--page-shadow) solid transparent;
+	border-image: url("images/shadow.png") 9 repeat;
+	padding: var(--padding);
+	width: calc(210mm - 2 * var(--padding));
+	height: calc(297mm - 2 * var(--padding));
+	background: padding-box white;
+}
+
+header
+{
+	display: grid;
+	grid-template-areas: "contacts name photo";
+	grid-template-columns: 1fr auto 1fr;
+	margin-bottom: 27px;
+}
+
+h1
+{
+	grid-area: name;
+	place-self: center;
+	width: 243px;
+	text-align: center;
+	font: 22px / 28px "PT Serif", "PT Serif Web", serif;
+	font-weight: normal;
+}
+
+small
+{
+	display: block;
+	margin-top: 8px;
+	border-top: 1px solid black;
+	padding-top: 8px;
+	line-height: 20px;
+	font-size: 16px;
+	font-style: italic;
+}
+
+address
+{
+	grid-area: contacts;
+	margin-top: 8px;
+	font-style: normal;
+
+	> a
+	{
+		display: block;
+		margin-bottom: 7px;
+		width: max-content;
+
+		&::before
+		{
+			display: inline-block;
+			margin: 2px 7px 0 0;
+			width: var(--icon-size);
+		}
+	}
+}
+
+#telegram::before { content: url("images/telegram.svg"); }
+#github::before   { content: url("images/github.svg");   }
+#email::before    { content: url("images/email.svg");    }
+#phone::before    { content: url("images/phone.svg");    }
+
+a
+{
+	address > &::after,
+	#courses > li > &::after,
+	ul:not(#courses) > li > &
+	{
+		border-bottom: 1px solid #b2ccf0;
+		padding-bottom: 1px;
+		color: #008ace;
+	}
+}
+
+address > a::after
+{
+	content: attr(data-text);
+	display: inline-block;
+	vertical-align: top;
+	padding-bottom: 2px;
+	font: 15px / 17px "Ubuntu", "Ubuntu Web";
+}
+
+#photo
+{
+	grid-area: photo;
+	justify-self: right;
+	border-radius: 8px;
+	width: 118px;
+}
+
+h2, p, ul
+{
+	margin-bottom: var(--inner-margin);
+	line-height: 20px;
+	font-size: 16px;
+}
+
+h2
+{
+	font-weight: bold;
+
+	&.inline
+	{
+		float: left;
+		margin: 0;
+
+		&::after { content: "\a0"; }
+	}
+}
+
+ul { padding-left: 30px; }
+
+li
+{
+	margin-bottom: 2px;
+	padding-left: 10px;
+
+	&::marker
+	{
+		content: "⋄";
+		font-family: initial;
+	}
+}
+
+#courses
+{
+	max-width: max-content;
+
+	> li
+	{
+		margin-bottom: 10px;
+
+		> a
+		{
+			float: right;
+			margin-left: 60px;
+
+			&::before
+			{
+				content: url("images/stepik.svg");
+				display: inline-block;
+				vertical-align: top;
+				margin: 3px 7px 0 0;
+				width: var(--icon-size);
+			}
+
+			&::after { content: "100%"; }
+		}
+	}
+}
+
+#print-button
+{
+	--whitewash: brightness(0) invert(1);
+	--green: #007000;
+	display: block;
+	position: fixed;
+	right: var(--button-position);
+	bottom: var(--button-position);
+	border-radius: 50%;
+	width: var(--button-size);
+	height: var(--button-size);
+	background-color: white;
+	box-shadow: 0 2px 2px  0   rgb(0 0 0 / 14%),
+	            0 3px 1px -2px rgb(0 0 0 / 12%),
+	            0 1px 5px  0   rgb(0 0 0 / 20%);
+
+	&::after
+	{
+		content: "";
+		position: absolute;
+		border-radius: inherit;
+		width: 100%;
+		height: 100%;
+		background: no-repeat url("images/print.svg") center / auto 46%;
+	}
+
+	&:hover
+	{
+		background-color: var(--green);
+		&::after { filter: var(--whitewash); }
+	}
+}
+
+@media only screen and (max-width: 219mm)
+{
+	body
+	{
+		--button-position: 20px;
+		padding-top: 0;
+	}
+
+	section
+	{
+		--icon-margin: 12px;
+		margin: 0;
+		border: 0;
+		padding: var(--button-position);
+		padding-bottom: calc(2 * var(--button-position)
+		                       + var(--button-size)
+		                       - var(--inner-margin));
+		width: auto;
+		height: auto;
+	}
+
+	header
+	{
+		grid-template-areas: "name name" "photo contacts";
+		grid-template-columns: initial;
+	}
+
+	h1 { margin-bottom: var(--inner-margin); }
+
+	address { margin-left: var(--icon-margin); }
+
+	h2, p, ul { line-height: 22px; }
+
+	ul { padding-left: 15px; }
+
+	#courses
+	{
+		max-width: initial;
+		> li > a { margin-left: var(--icon-margin); }
+	}
+
+	#print-button
+	{
+		background-color: var(--green);
+		&::after { filter: var(--whitewash); }
+	}
+}
+
+@media print
+{
+	body { padding: 0; }
+
+	section
+	{
+		margin: 0;
+		border: 0;
+	}
+
+	#print-button { display: none; }
+}
+
+@page { margin: 0; }
+
+@font-face
+{
+	font-family: "Ubuntu Web";
+	src: url("fonts/ubuntu-regular.ttf");
+}
+
+@font-face
+{
+	font-family: "PT Sans Web";
+	src: url("fonts/pt-sans-regular.ttf");
+	font-weight: normal;
+}
+
+@font-face
+{
+	font-family: "PT Sans Web";
+	src: url("fonts/pt-sans-bold.ttf");
+	font-weight: bold;
+}
+
+@font-face
+{
+	font-family: "PT Serif Web";
+	src: url("fonts/pt-serif-regular.ttf");
+	font-style: normal;
+}
+
+@font-face
+{
+	font-family: "PT Serif Web";
+	src: url("fonts/pt-serif-italic.ttf");
+	font-style: italic;
+}
