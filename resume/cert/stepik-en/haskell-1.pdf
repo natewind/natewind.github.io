@@ -252,7 +252,7 @@ endobj
 endobj
 23 0 obj
 <<
-/Author (Stepik) /CreationDate (D:20230905154854+00'00') /Creator (ReportLab PDF Library - www.reportlab.com) /Keywords () /ModDate (D:20230905154854+00'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
+/Author (Stepik) /CreationDate (D:20240818185901+00'00') /Creator (ReportLab PDF Library - www.reportlab.com) /Keywords () /ModDate (D:20240818185901+00'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
   /Subject (unspecified) /Title (Stepik Certificate: Functional programming in Haskell) /Trapped /False
 >>
 endobj
@@ -263,10 +263,10 @@ endobj
 endobj
 25 0 obj
 <<
-/Filter [ /ASCII85Decode /FlateDecode ] /Length 669
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 666
 >>
 stream
-Gat='995Pr&AI`dk#,p*>CertB91S$WiBB+jj5LYPL,#F--?/cg;]pVgE'Ol,bKj[mpS9tR"'AYXp9JQ,nq:.*2.2"Md/OC%6g-394e=H/nn>NcAKk+%6qjLcHr"P$Yl5L)C!(1`Mcd1gI<D+K#]TmauhUYE`uqt]ndp<jkqHTJH:WNMC(8JoSta$mQHe!TtCmG=<*lThTE]eS,o;n<aL6i?ci(=ihn:k`CP36eSEdPp[58dHM?.Dqj#ZpIr88Jdsn?5/r0;YNJFNhj#$2$C)FT-F9hS=SXs-E^JS";JmqSYEdk@BX\bPQ=prq=8kEN.1c<`qS0ZCURQ!:3bVWAH1jHpT<Q,Y,ac+uKF-\o$V-6F/B\NgG^,[h,.cq'U`P\4TNL.Rrgn2p5e&S1BS_^PtcGsX#eDk+$\O+J>]G2G9PB6\@N,CZmge)JOMDHVq"<#:g<CTV`f)C%,)1"2/(d-^WoV%Gg?1P%8U56@b6HiOsSHV8@G'^AL02prD4I,rG,In&QPKbBC/R(rS5SZ??S`j^*<D6?=8b?.uqlIL*^.F0k42Es,9"9q)e?aL"EipeWZj[fbN\M<^"BZMRf>JZH,fQ,ue<ucsOM]al9[$oJP@B$\=#5[VqHU>%G^oSiBOPs,s*c!&?4P7^4od@P5(1M$!TD$*h>~>endstream
+Gat='997OU&AI=/bQV_67>X1f-V":S63q;%8BWkbS8R"B\nP4CI;HqQW>5u:W9rcibkJ>I%a7."Ib-`uLD#Ib#EDWh^dTlKr!K(=lo?j'A!aPPF_A[2SGM^75%eP'V$49P2@Yf-Z=;<5VJW(?%Dg(>]?`Su:NBWJcFo#Z#%d6LnW!X-+GqL)61fmfp?!rk5G5Xu%Tj^A%c5@NJt)k8%T]0N^Yd--:ZA8[5K-/Phl>AG_f9@=NaoDX\bFFX!cn,jL#'pKcc:%(3]Kjo@B02'3#pj9^ut"\jLXcEW`g)NMn5)CX%dJci`+N5\>E+q)I&u9R7?3^E@05Aaan#sZ$N+[.i,9;VMIfUg`E#mh!$uP67PJ%7`b;R;'B!q=3)fXQFq(I+?niG4J0pfMrHk2e+"k/VaF=B0@SSh>&N>:kX_,3l[NDddp-iB\[<C%S?*<5+P0X3/R_r^o,0=UCl$Gb^]Wde-',\!=5cOZF(9o+Y^ebBJ9^GQ?u95JaEMnZs&2F.%mhXJ8E*j^R::^sFN-Di/`<@jVP9:<Zd'Vup=B*f-0"=ql_Grf0%NlQmRbNsT!Zs%A4S]"=Rd;;Aaj">Et"6HA"HM0C<8gMYK&@PLCm4;h$%00,_kN(c'%)bl2RN4c&MYuFnkM_3+$q9aS>K$+o;FOa9c)~>endstream
 endobj
 xref
 0 26
@@ -299,7 +299,7 @@ xref
 trailer
 <<
 /ID 
-[<2f6cf8f4ccd54b5cbf9fbbea65f3ac76><2f6cf8f4ccd54b5cbf9fbbea65f3ac76>]
+[<f817411073a02c93f7a29e5739a13491><f817411073a02c93f7a29e5739a13491>]
 % ReportLab generated PDF document -- digest (http://www.reportlab.com)
 
 /Info 23 0 R
@@ -307,5 +307,5 @@ trailer
 /Size 26
 >>
 startxref
-744837
+744834
 %%EOF

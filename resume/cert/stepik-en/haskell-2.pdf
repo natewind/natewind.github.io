@@ -252,7 +252,7 @@ endobj
 endobj
 23 0 obj
 <<
-/Author (Stepik) /CreationDate (D:20230905153800+00'00') /Creator (ReportLab PDF Library - www.reportlab.com) /Keywords () /ModDate (D:20230905153800+00'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
+/Author (Stepik) /CreationDate (D:20240818185848+00'00') /Creator (ReportLab PDF Library - www.reportlab.com) /Keywords () /ModDate (D:20240818185848+00'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
   /Subject (unspecified) /Title (Stepik Certificate: Functional programming in Haskell \(Part 2\)) /Trapped /False
 >>
 endobj
@@ -263,10 +263,10 @@ endobj
 endobj
 25 0 obj
 <<
-/Filter [ /ASCII85Decode /FlateDecode ] /Length 687
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 685
 >>
 stream
-Gat='95g=S&AI`dk#*Xh$LAWpH`YYoLIuD_%R&mi)RJ+O>nWIapX_<8b:;nQ'`pRgRI=Q'%P1jI4l%1;@h$s?#EDW)^dT]FrW8_Wijg`E;jF^><u9ES0^aE!S!'I&N>C#hgU9M)bD&llR's+d1^#a)EE<9\T&m>tOp;Rj%-i8&`+oQ*U*uJY7*uCffXjeTImSPu*O+$SDM+4."ZZZO*N_I(rk=O%GNPe:5G^me2pLZkL$uXk[d!bVc988)m_X+LJt2g5jn@foVVQ3)H?^?`mF^e"5nS8FptQi2IG_s@`OBHL!:MSu(f7Q+@`a5_r+sV>Tf>'1Kl:1lUp1Dh@iC>n`0jTrRR`[3`p/rrcWI\lQm*lFnJh,WEj%F_KN*mgXcVA.SO9PX`#)Q\cdB@H?:*G&BmMghW2en=T6?:W0Q&C"]So?f.8-^h.mDB\>5N6&I[hmj)'c:cUa9.ga?Z`,10VOM%\%Sh0[Lu[4ocWi+(ra':14jG(U5etL`$S>70LP-AH5BndRBiZ:kb6/j8m1k2Nsr?Ct6KK<NJk!Un>Ip0m=okaepX1MXDth-=tZs7-gXB`dL.AQ-@PA,>Ri53tGhUN)PZ=0*)iCi&*<g0Ng-lM=\a2Gt@2+p,qE87;'U=KGQEP6hGZHP2lN*B@8%u6%;*0?emPTr!;:F+@BE$58:j4F<;%q~>endstream
+Gat='95g=S&AI`dk#,oW<++&IfjiQ%4]H8C+gm)1=>64]@+hbPrVO!^fs"(qBSCu_B'+HmL'.#`O3bBBG[EdWbCLn&/T?g[-pPVi14.0&^fVnb9%@'a4,j-!@@K'[VUC'"B:FXsE*4o1("9V=Lkaj*OPOK>RjU3J1$;k2&qdLaP'FkE71_nORio<$N4lcRngB[R_#]Irj3Ck3=HG<]eA9;VbP.9\^Cri&q'eeeI&SFthtMogf.]$3R6,n(.NkYh;Rh-=eC/k+<#lt!@5h58^H_'mIt1>Fl-XVogi'o,irjUVou_fR`>"4G,j-!0h$V-#Y-i4CUQdUD7T2+&`_#/`Wd28[b=lF=9S4-4>ZFH0PK^Ng3bQ"P>H3BVN4+_-mAjM[Y%#<\=5;$IgNZbHgkTT)T&(4$Bl_8m@m5j`U)ooHP:Mlo<PB1iC!*RV2bH#("kS\Ff.5:>X:\tcf2`b@@2\se3b7I=&>AiK#LJ0m4KakiL$_=QN>5pB!pV<:ij$paV0M5K?fe9bX,c6^KM".d`34"-`<'&<N!H/J_-&L8746JqSNUNN[J*D<`oRNX8XY7DN&8_GS_XMjkEC'-L("C/(^jXO/.CBN@ZFl[@a#MJNLBC"dMM:baCC-'MVT.'Aep-Zo:.,GqpWle8`kX(INH5Se$*s>LpqmCEOGh.r<D)"%Y+~>endstream
 endobj
 xref
 0 26
@@ -299,7 +299,7 @@ xref
 trailer
 <<
 /ID 
-[<fac4aa16a524485634941bc8133a0f84><fac4aa16a524485634941bc8133a0f84>]
+[<73b45e540ae6c82a3b14a01a3a452ee4><73b45e540ae6c82a3b14a01a3a452ee4>]
 % ReportLab generated PDF document -- digest (http://www.reportlab.com)
 
 /Info 23 0 R
@@ -307,5 +307,5 @@ trailer
 /Size 26
 >>
 startxref
-744868
+744866
 %%EOF
