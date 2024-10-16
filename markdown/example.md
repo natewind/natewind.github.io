@@ -271,18 +271,6 @@ auto main() -> int
 
 ![Alt text](example.png)
 
-## Marked
-
-| Domain      | Login    | Password    |
-| ----------- | -------- | ----------- |
-| example.org | username | ==example== |
-| example.com | username | ==example== |
-| example.me  | username | ==example== |
-
-### In text
-
-Mauris vitae erat lorem. Duis imperdiet felis non tellus semper, vitae ==laoreet== nisi aliquam. Aenean placerat ipsum et nibh euismod, et ==posuere libero== gravida. Sed dui purus, blandit ac tortor eu, dignissim commodo libero.
-
 [^1]: And they all saw separate plates, on a table in the waiting room marked “please take only one” so nobody knew what was being tested, and none of them saw the others’ cookie choices.
 
 [^2]: Recall the Bayesian’s earlier thought that, after seeing five subjects select green cookies followed by one subject selecting a red cookie, we’d already picked up strong evidence *against* the proposition: “Subjects in this experimental population lopsidedly prefer red cookies over green cookies.”
