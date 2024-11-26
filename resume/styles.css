@@ -135,7 +135,11 @@ li
 	padding-left: 10px;
 }
 
-li::marker { content: "⋄"; }
+li::marker
+{
+	content: "⋄";
+	font-family: initial;
+}
 
 s { text-decoration: line-through; }
 
