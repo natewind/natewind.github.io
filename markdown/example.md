@@ -170,7 +170,7 @@ auto main() -> int
 > Mauris egestas tristique arcu quis bibendum. Suspendisse potenti. Cras dictum purus interdum, eleifend velit ut, vulputate mauris. Nullam eget pulvinar odio.
 >
 > Nunc convallis faucibus pharetra. Vestibulum id tempor ex, sit amet consequat urna.
-> >
+>
 > Cras varius lorem quis justo rhoncus, id pulvinar diam iaculis. In eu odio ac nisi eleifend accumsan.
 
 > If you take common sense and rigorously apply it, through multiple inferential steps, to areas outside everyday experience, successfully avoiding many possible distractions and tempting mistakes along the way, then it often ends up as a minority position, and people give it a special name.
