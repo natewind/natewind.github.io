@@ -166,8 +166,8 @@ auto main() -> int
 ## Quotes
 
 > Pellentesque et rhoncus purus, at imperdiet velit. Suspendisse magna justo, aliquet nec ornare eu, elementum hendrerit sapien.
-<!-- >> Donec ex justo, eleifend et elit quis, dictum elementum sem.
->> Mauris egestas tristique arcu quis bibendum. Suspendisse potenti. Cras dictum purus interdum, eleifend velit ut, vulputate mauris. Nullam eget pulvinar odio. -->
+> Donec ex justo, eleifend et elit quis, dictum elementum sem.
+> Mauris egestas tristique arcu quis bibendum. Suspendisse potenti. Cras dictum purus interdum, eleifend velit ut, vulputate mauris. Nullam eget pulvinar odio.
 >
 > Nunc convallis faucibus pharetra. Vestibulum id tempor ex, sit amet consequat urna.
 > >
