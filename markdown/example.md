@@ -271,7 +271,7 @@ auto main() -> int
 
 ### With a link
 
-[![Alt text](example.png)](https://example.com)
+[![Alt text](example.png)](https://github.com/natewind/cleario)
 
 ### With a default link to the image
 
