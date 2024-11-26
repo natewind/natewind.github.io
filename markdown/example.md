@@ -12,6 +12,7 @@ Nulla sed risus elit. Donec lorem purus, ullamcorper ac metus quis, feugiat hend
 
 $$
 \mathbb{P}(H | e) = \frac{\mathbb{P}(H) \times \mathbb{P}(e | H)}{\mathbb{P}(e)}
+
 \mathbb{P}(H | e) = \frac{\mathbb{P}(H) \times \mathbb{P}(e | H)}{\mathbb{P}(e)}
 $$
 
