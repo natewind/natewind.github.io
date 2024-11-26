@@ -271,6 +271,12 @@ auto main() -> int
 
 ## Image
 
+### With a link
+
+[![Alt text](example.png)](example.com)
+
+### With a default link to the image
+
 ![Alt text](example.png)
 
 [^1]: And they all saw separate plates, on a table in the waiting room marked “please take only one” so nobody knew what was being tested, and none of them saw the others’ cookie choices.
