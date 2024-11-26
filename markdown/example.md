@@ -273,7 +273,7 @@ auto main() -> int
 
 ### With a link
 
-[![Alt text](example.png)](example.com)
+[![Alt text](example.png)](https://example.com)
 
 ### With a default link to the image
 
