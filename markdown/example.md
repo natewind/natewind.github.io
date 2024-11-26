@@ -12,8 +12,6 @@ Nulla sed risus elit. Donec lorem purus, ullamcorper ac metus quis, feugiat hend
 
 $$
 \mathbb{P}(H | e) = \frac{\mathbb{P}(H) \times \mathbb{P}(e | H)}{\mathbb{P}(e)}
-
-\mathbb{P}(H | e) = \frac{\mathbb{P}(H) \times \mathbb{P}(e | H)}{\mathbb{P}(e)}
 $$
 
 Fusce euismod felis sed dignissim consequat. $x^2 + y^2 = 16$ Curabitur quis erat tincidunt, dapibus libero maximus, vestibulum felis. $\tau \approx 6.28$ Morbi non imperdiet eros. In hac habitasse platea dictumst. Separator:
