@@ -88,7 +88,7 @@ val wordsSequence = words.asSequence()
 val lengthsSequence = wordsSequence
 	.map { it.length }
 	.filter { it > 3 }
-    .take(4)
+	.take(4)
 
 println("Lengths of first 4 words longer than 3 chars")
 
