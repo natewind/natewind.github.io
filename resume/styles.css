@@ -121,6 +121,8 @@ h2, p, ul
 
 h2
 {
+	font-weight: bold;
+
 	&.inline
 	{
 		float: left;
