@@ -119,13 +119,16 @@ h2, p, ul
 	font-size: 16px;
 }
 
-h2.inline
+h2
 {
-	float: left;
-	margin: 0;
-}
+	&.inline
+	{
+		float: left;
+		margin: 0;
 
-h2.inline::after { content: "\a0"; }
+		&::after { content: "\a0"; }
+	}
+}
 
 ul { padding-left: 30px; }
 
@@ -143,25 +146,32 @@ li::marker
 
 s { text-decoration: line-through; }
 
-#courses { max-width: max-content; }
-#courses > li { margin-bottom: 10px; }
-
-#courses > li > a
+#courses
 {
-	float: right;
-	margin-left: 60px;
-}
+	max-width: max-content;
 
-#courses > li > a::before
-{
-	content: url("images/stepik.svg");
-	display: inline-block;
-	vertical-align: top;
-	margin: 3px 7px 0 0;
-	width: var(--icon-size);
-}
+	& > li
+	{
+		margin-bottom: 10px;
 
-#courses > li > a::after { content: "100%"; }
+		& > a
+		{
+			float: right;
+			margin-left: 60px;
+
+			&::before
+			{
+				content: url("images/stepik.svg");
+				display: inline-block;
+				vertical-align: top;
+				margin: 3px 7px 0 0;
+				width: var(--icon-size);
+			}
+
+			&::after { content: "100%"; }
+		}
+	}
+}
 
 #print-button
 {
