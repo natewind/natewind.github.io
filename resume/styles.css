@@ -146,8 +146,6 @@ li::marker
 	font-family: initial;
 }
 
-s { text-decoration: line-through; }
-
 #courses
 {
 	max-width: max-content;
