@@ -10,7 +10,7 @@
 				function loadMarkdown() {
 					const hash = window.location.hash.substring(2); // Remove "#/"
 					const article = hash;
-					const filePath = `./${article}.md`;
+					const filePath = `article/${article}.md`;
 
 					fetch(filePath)
 						.then(response => response.text())
