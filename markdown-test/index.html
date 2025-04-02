@@ -8,7 +8,7 @@
 		<script>
 			document.addEventListener("DOMContentLoaded", function () {
 				const params = new URLSearchParams(window.location.search);
-				const article = params.get("article") || "sample";
+				const article = params.get("article");
 				const filePath = `./${article}.md`;
 
 				fetch(filePath)
