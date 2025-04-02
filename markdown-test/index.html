@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<base target="_blank">
+		<title>Markdown Test</title>
+		<script>
+			document.addEventListener("DOMContentLoaded", function () {
+				fetch("./sample.md")
+					.then(response => response.text())
+					.then(text => { document.getElementById("md").textContent = text; })
+					.catch(error => console.error("Error loading the markdown file: ", error));
+			});
+		</script>
+	</head>
+	<body>
+		<p id="md"></p>
+	</body>
+</html>
