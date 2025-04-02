@@ -8,9 +8,9 @@
 		<script>
 			document.addEventListener("DOMContentLoaded", function () {
 				function loadMarkdown() {
-					const hash = window.location.hash.substring(2); // Remove "#/"
-					const article = hash;
-					const filePath = `./${article}.md`;
+					// const hash = window.location.hash.substring(2); // Remove "#/"
+					const pathname = window.location.pathname.split('/').pop(); // Get the last part of the URL
+					const article = pathname; // Use the pathname directly
 
 					fetch(filePath)
 						.then(response => response.text())
