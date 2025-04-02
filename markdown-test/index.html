@@ -12,6 +12,8 @@
 					const pathname = window.location.pathname.split('/').pop(); // Get the last part of the URL
 					const article = pathname; // Use the pathname directly
 
+					const filePath = `articles/${article}.md`;
+
 					fetch(filePath)
 						.then(response => response.text())
 						.then(text => {
