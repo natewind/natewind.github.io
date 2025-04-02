@@ -7,16 +7,21 @@
 		<title>Markdown Test</title>
 		<script>
 			document.addEventListener("DOMContentLoaded", function () {
-				const params = new URLSearchParams(window.location.search);
-				const article = params.get("article");
-				const filePath = `./${article}.md`;
+				function loadMarkdown() {
+					const hash = window.location.hash.substring(2); // Remove "#/"
+					const article = hash;
+					const filePath = `./${article}.md`;
 
-				fetch(filePath)
-					.then(response => response.text())
-					.then(text => {
-						document.getElementById("md").textContent = text;
-					})
-					.catch(error => console.error("Error loading the markdown file: ", error));
+					fetch(filePath)
+						.then(response => response.text())
+						.then(text => {
+							document.getElementById("md").textContent = text;
+						})
+						.catch(error => console.error("Error loading the markdown file:", error));
+				}
+
+				window.addEventListener("hashchange", loadMarkdown);
+				loadMarkdown(); // Load on initial page load
 			});
 		</script>
 	</head>
