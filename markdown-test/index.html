@@ -13,7 +13,7 @@
 		<script>
 			document.addEventListener("DOMContentLoaded", function () {
 				function loadMarkdown() {
-					const hash = window.location.hash.substring(2); // Remove "#/"
+					const hash = window.location.hash.substring(2);
 					const article = hash;
 					const filePath = `articles/${article}.md`;
 
@@ -23,17 +23,15 @@
 							const md = markdownit();
 							const result = md.render(text);
 							document.body.innerHTML = result;
-							// document.getElementById("md").textContent = text;
 						})
 						.catch(error => console.error("Error loading the markdown file:", error));
 				}
 
 				window.addEventListener("hashchange", loadMarkdown);
-				loadMarkdown(); // Load on initial page load
+				loadMarkdown();
 			});
 		</script>
 	</head>
 	<body>
-		<!-- <p id="md"></p> -->
 	</body>
 </html>
