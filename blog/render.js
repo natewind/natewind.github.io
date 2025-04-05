@@ -1,4 +1,4 @@
-import markdownit from "https://cdnjs.cloudflare.com/ajax/libs/markdown-it/13.0.2/markdown-it.js"
+import markdownit from "https://cdnjs.cloudflare.com/ajax/libs/markdown-it/13.0.2/markdown-it.js/+esm"
 
 // TODO: Automatically fix relative links?
 // TODO: Set <html lang="ru"> for the libertarian playlist?
