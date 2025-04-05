@@ -1,4 +1,4 @@
-import markdownit from "https://cdnjs.cloudflare.com/ajax/libs/markdown-it/13.0.2/markdown-it.js/+esm"
+import markdownIt from "https://cdn.jsdelivr.net/npm/markdown-it@14.1.0/+esm"
 
 // TODO: Automatically fix relative links?
 // TODO: Set <html lang="ru"> for the libertarian playlist?
@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		fetch(filePath)
 			.then(response => response.text())
 			.then(text => {
-				const md = markdownit();
+				const md = markdownIt();
 				const result = md.render(text);
 				document.body.innerHTML = result;
 			})
