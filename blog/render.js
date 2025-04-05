@@ -1,5 +1,7 @@
 // import markdownIt from "https://cdn.jsdelivr.net/npm/markdown-it@14.1.0/+esm"
 
+alert("Hello!");
+
 // TODO: Automatically fix relative links?
 // TODO: Set <html lang="ru"> for the libertarian playlist?
 // document.addEventListener("DOMContentLoaded", function () {
