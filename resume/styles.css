@@ -275,33 +275,33 @@ li
 @font-face
 {
 	font-family: "Ubuntu Web";
-	src: url("fonts/Ubuntu Regular.ttf");
+	src: url("fonts/ubuntu-regular.ttf");
 }
 
 @font-face
 {
 	font-family: "PT Sans Web";
-	src: url("fonts/PT Sans Regular.ttf");
+	src: url("fonts/pt-sans-regular.ttf");
 	font-weight: normal;
 }
 
 @font-face
 {
 	font-family: "PT Sans Web";
-	src: url("fonts/PT Sans Bold.ttf");
+	src: url("fonts/pt-sans-bold.ttf");
 	font-weight: bold;
 }
 
 @font-face
 {
 	font-family: "PT Serif Web";
-	src: url("fonts/PT Serif Regular.ttf");
+	src: url("fonts/pt-serif-regular.ttf");
 	font-style: normal;
 }
 
 @font-face
 {
 	font-family: "PT Serif Web";
-	src: url("fonts/PT Serif Italic.ttf");
+	src: url("fonts/pt-serif-italic.ttf");
 	font-style: italic;
 }
