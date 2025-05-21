@@ -32,7 +32,6 @@ document.addEventListener("DOMContentLoaded", function()
 			.then(response => response.text())
 			.then(text =>
 			{
-				const md = markdownIt();
 				const rendered = md.render(toc_marker + text);
 				document.body.innerHTML = rendered;
 				document.title = document.querySelector("h1").textContent;
