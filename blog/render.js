@@ -25,7 +25,13 @@ document.addEventListener("DOMContentLoaded", function()
 {
 	function load_article()
 	{
-		const article = window.location.hash.substring(2);
+		const article = getQueryParam("article");
+
+		if (!article)
+			// TODO: Redirect to https://t.me/s/<channel-username>
+			return;
+
+		// const article = window.location.hash.substring(2);
 		const path = `articles/${article}.md`;
 
 		fetch(path)
@@ -39,6 +45,6 @@ document.addEventListener("DOMContentLoaded", function()
 			.catch(error => console.error("Error loading the Markdown article: ", error));
 	}
 
-	window.addEventListener("hashchange", load_article);
+	// window.addEventListener("hashchange", load_article);
 	load_article();
 });
