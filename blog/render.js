@@ -31,6 +31,7 @@ document.addEventListener("DOMContentLoaded", function()
 
 		if (!article)
 			// TODO: Redirect to https://t.me/s/<channel-username>
+			// TODO: Same if article doesn’t exist?
 			return;
 
 		const path = `articles/${article}.md`;
