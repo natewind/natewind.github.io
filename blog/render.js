@@ -1,10 +1,14 @@
-import markdownIt from "https://cdn.jsdelivr.net/npm/markdown-it@14.1.0/+esm"
+import markdownIt from "https://cdn.jsdelivr.net/npm/markdown-it@14.1.0/+esm";
+import markdownItAnchor from "https://cdn.jsdelivr.net/npm/markdown-it-anchor@9.2.0/+esm";
+import markdownItTableOfContents
+	from "https://cdn.jsdelivr.net/npm/markdown-it-table-of-contents@0.9.0/+esm";
+
 
 const md = markdownIt();
 const toc_marker = "[[toc]]\n\n";
 
-md.use(require("markdown-it-anchor").default);
-md.use(require("markdown-it-table-of-contents"),
+md.use(markdownItAnchor);
+md.use(markdownItTableOfContents,
 {
 	includeLevel: [1, 2, 3],
 	containerClass: "nav"
