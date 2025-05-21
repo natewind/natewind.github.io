@@ -3,6 +3,8 @@ import markdownItAnchor from "https://cdn.jsdelivr.net/npm/markdown-it-anchor@9.
 import markdownItTableOfContents
 	from "https://cdn.jsdelivr.net/npm/markdown-it-table-of-contents@0.9.0/+esm";
 
+// TODO: MathJax for LaTeX!
+
 const md = markdownIt();
 const toc_marker = "[[toc]]\n\n";
 
