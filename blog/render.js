@@ -1,5 +1,15 @@
 import markdownIt from "https://cdn.jsdelivr.net/npm/markdown-it@14.1.0/+esm"
 
+const md = markdownIt();
+const toc_marker = "[[toc]]\n\n";
+
+md.use(require("markdown-it-anchor").default);
+md.use(require("markdown-it-table-of-contents"),
+{
+	includeLevel: [1, 2, 3],
+	containerClass: "nav"
+});
+
 // TODO: Consider:
 // git submodule add https://github.com/markdown-it/markdown-it.git vendor/markdown-it
 // git submodule update --init --recursive
@@ -15,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function()
 		const path = `articles/${article}.md`;
 
 		fetch(path)
-			.then(response => response.text())
+			.then(response => toc_marker + response.text())
 			.then(text =>
 			{
 				const md = markdownIt();
