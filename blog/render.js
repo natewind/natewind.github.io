@@ -25,7 +25,8 @@ document.addEventListener("DOMContentLoaded", function()
 {
 	function load_article()
 	{
-		const article = getQueryParam("article");
+		const url_params = new URLSearchParams(window.location.search);
+		const article = url_params.get("article");
 
 		if (!article)
 			// TODO: Redirect to https://t.me/s/<channel-username>
