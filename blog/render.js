@@ -3,9 +3,10 @@ import markdownItAnchor from "https://cdn.jsdelivr.net/npm/markdown-it-anchor@9.
 import markdownItTableOfContents
 	from "https://cdn.jsdelivr.net/npm/markdown-it-table-of-contents@0.9.0/+esm";
 
-
 const md = markdownIt();
 const toc_marker = "[[toc]]\n\n";
+
+// TODO: Add param to exclude Unicode from anchor links
 
 md.use(markdownItAnchor);
 md.use(markdownItTableOfContents,
@@ -32,7 +33,6 @@ document.addEventListener("DOMContentLoaded", function()
 			// TODO: Redirect to https://t.me/s/<channel-username>
 			return;
 
-		// const article = window.location.hash.substring(2);
 		const path = `articles/${article}.md`;
 
 		fetch(path)
@@ -46,6 +46,5 @@ document.addEventListener("DOMContentLoaded", function()
 			.catch(error => console.error("Error loading the Markdown article: ", error));
 	}
 
-	// window.addEventListener("hashchange", load_article);
 	load_article();
 });
