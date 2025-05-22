@@ -13,17 +13,21 @@ const toc_marker = "[[toc]]\n\n";
 
 // TODO: Add param to exclude Unicode from anchor links
 
-const slugify = (title) => String(title)
-	.trim()
-	.toLowerCase()
-	.replace(/\s+/g, "-")
-	.replace(/[^a-z0-9\-_.~]/g, "");
+// const slugify = (title) => String(title)
+// 	.trim()
+// 	.toLowerCase()
+// 	.replace(/\s+/g, "-")
+// 	.replace(/[^a-z0-9\-_.~]/g, "");
 
 md.use(markdownItAnchor);
 md.use(markdownItTableOfContents,
 {
 	includeLevel: [1, 2, 3],
-	slugify: slugify,
+	slugify: (title) => String(title)
+		.trim()
+		.toLowerCase()
+		.replace(/\s+/g, "-")
+		.replace(/[^a-z0-9\-_.~]/g, ""),
 	transformContainerOpen: () => "<nav>",
 	transformContainerClose: () => "</nav>"
 });
