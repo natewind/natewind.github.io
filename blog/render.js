@@ -16,7 +16,9 @@ md.use(markdownItAnchor);
 md.use(markdownItTableOfContents,
 {
 	includeLevel: [1, 2, 3],
-	containerClass: "nav"
+	// containerClass: "nav",
+	transformContainerOpen: () => "<nav>",
+	transformContainerClose: () => "</nav>"
 });
 
 // TODO: Consider:
@@ -50,14 +52,14 @@ document.addEventListener("DOMContentLoaded", function()
 				document.title = document.querySelector("h1").textContent;
 
 				const toc = document.querySelector("nav");
-				const main = document.createElement("main");
+				const content = document.createElement("main");
 
 				const children = document.createRange();
 				children.setStartAfter(toc);
 				children.setEndAfter(document.body.lastChild);
 
-				main.appendChild(children.extractContents());
-				document.body.appendChild(main);
+				content.appendChild(children.extractContents());
+				document.body.appendChild(content);
 			})
 			.catch(error => console.error("Error loading the Markdown article: ", error));
 	}
