@@ -44,23 +44,20 @@ document.addEventListener("DOMContentLoaded", function()
 			.then(response => response.text())
 			.then(text =>
 			{
-				const rendered = md.render(`${toc_marker}\n\n<main>\n\n${text}\n\n</main>`);
+				const rendered = md.render(toc_marker + text);
 				document.body.innerHTML = rendered;
 
 				document.title = document.querySelector("h1").textContent;
 
-				// const nav = document.querySelector("nav");
-				// const main = document.createElement("main");
+				const toc = document.querySelector("nav");
+				const main = document.createElement("main");
 
-				// 	let el = nav.nextSibling;
-				// 	while (el) {
-				// 	const next = el.nextSibling;
-				// 	main.appendChild(el);
-				// 	el = next;
-				// 	}
+				const md_elements = document.createRange();
+				range.setStartAfter(toc);
+				range.setEndAfter(document.body.lastChild);
 
-				// 	nav.parentNode.appendChild(main);
-
+				main.appendChild(range.extractContents());
+				document.body.appendChild(main);
 			})
 			.catch(error => console.error("Error loading the Markdown article: ", error));
 	}
