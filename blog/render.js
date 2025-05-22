@@ -16,7 +16,6 @@ md.use(markdownItAnchor);
 md.use(markdownItTableOfContents,
 {
 	includeLevel: [1, 2, 3],
-	// containerClass: "nav",
 	transformContainerOpen: () => "<nav>",
 	transformContainerClose: () => "</nav>"
 });
@@ -54,15 +53,6 @@ document.addEventListener("DOMContentLoaded", function()
 
 				document.body.appendChild(nav);
 				document.body.appendChild(main);
-
-				// const children = document.createRange();
-				// children.setStartAfter(toc);
-				// children.setEndAfter(document.body.lastChild);
-
-				// content.appendChild(children.extractContents());
-				// document.body.appendChild(content);
-
-				// TODO: Fix empty (space-only) string at the end of <body>
 			})
 			.catch(error => console.error("Error loading the Markdown article: ", error));
 	}
