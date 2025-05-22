@@ -6,7 +6,7 @@ Ut luctus massa leo, quis rhoncus quam efficitur nec. Suspendisse consequat libe
 
 Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer ac ex turpis. Vivamus convallis mi eu nibh condimentum, non commodo dolor molestie. Nunc scelerisque eros at nisl malesuada interdum. Aenean tellus mauris, accumsan[^2] nec tincidunt ut, tristique nec nunc. Nunc ornare hendrerit scelerisque. Morbi dictum massa purus, convallis porttitor ipsum ultrices sit amet.
 
-## More Text
+## More Text, Title With Díäcrïtícs
 
 Nulla sed risus elit. Donec lorem purus, ullamcorper ac metus quis, feugiat hendrerit purus.
 

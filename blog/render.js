@@ -9,7 +9,10 @@ import markdownItTableOfContents
 
 const md = markdownIt();
 const toc_marker = "[[toc]]\n\n";
+
+const whitespace = /\s+/g;
 const uri_unsafe = /[^a-z0-9\-_.~]/g;
+const diacritics = /[\u0300-\u036f]/g;
 
 // TODO: Add param to exclude Unicode from anchor links
 
@@ -24,7 +27,9 @@ md.use(markdownItAnchor,
 	slugify: (heading) => String(heading)
 		.trim()
 		.toLowerCase()
-		.replace(/\s+/g, "-")
+		.replace(whitespace, "-")
+		.normalize("NFD")
+		.replace(diacritics, "")
 		.replace(uri_unsafe, "")
 });
 
