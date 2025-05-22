@@ -52,11 +52,11 @@ document.addEventListener("DOMContentLoaded", function()
 				const toc = document.querySelector("nav");
 				const main = document.createElement("main");
 
-				const md_elements = document.createRange();
-				range.setStartAfter(toc);
-				range.setEndAfter(document.body.lastChild);
+				const children = document.createRange();
+				children.setStartAfter(toc);
+				children.setEndAfter(document.body.lastChild);
 
-				main.appendChild(range.extractContents());
+				main.appendChild(children.extractContents());
 				document.body.appendChild(main);
 			})
 			.catch(error => console.error("Error loading the Markdown article: ", error));
