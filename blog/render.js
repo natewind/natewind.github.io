@@ -46,20 +46,23 @@ document.addEventListener("DOMContentLoaded", function()
 			.then(response => response.text())
 			.then(text =>
 			{
-				const rendered = md.render(toc_marker + text);
-				document.body.innerHTML = rendered;
+				const main = document.createElement("main");
+				main.innerHTML = md.render(toc_marker + text);
 
 				document.title = document.querySelector("h1").textContent;
+				const nav = main.querySelector("nav");
 
-				const toc = document.querySelector("nav");
-				const content = document.createElement("main");
+				document.body.appendChild(nav);
+				document.body.appendChild(main);
 
-				const children = document.createRange();
-				children.setStartAfter(toc);
-				children.setEndAfter(document.body.lastChild);
+				// const children = document.createRange();
+				// children.setStartAfter(toc);
+				// children.setEndAfter(document.body.lastChild);
 
-				content.appendChild(children.extractContents());
-				document.body.appendChild(content);
+				// content.appendChild(children.extractContents());
+				// document.body.appendChild(content);
+
+				// TODO: Fix empty (space-only) string at the end of <body>
 			})
 			.catch(error => console.error("Error loading the Markdown article: ", error));
 	}
