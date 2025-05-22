@@ -9,7 +9,7 @@ import markdownItTableOfContents
 
 const md = markdownIt();
 const toc_marker = "[[toc]]\n\n";
-// const uri_unsafe = /[^a-z0-9\-_.~]/g;
+const uri_unsafe = /[^a-z0-9\-_.~]/g;
 
 // TODO: Add param to exclude Unicode from anchor links
 
@@ -19,15 +19,18 @@ const toc_marker = "[[toc]]\n\n";
 // 	.replace(/\s+/g, "-")
 // 	.replace(/[^a-z0-9\-_.~]/g, "");
 
-md.use(markdownItAnchor);
-md.use(markdownItTableOfContents,
+md.use(markdownItAnchor,
 {
-	includeLevel: [1, 2, 3],
-	slugify: (title) => String(title)
+	slugify: (heading) => String(heading)
 		.trim()
 		.toLowerCase()
 		.replace(/\s+/g, "-")
-		.replace(/[^a-z0-9\-_.~]/g, ""),
+		.replace(uri_unsafe, "")
+});
+
+md.use(markdownItTableOfContents,
+{
+	includeLevel: [1, 2, 3],
 	transformContainerOpen: () => "<nav>",
 	transformContainerClose: () => "</nav>"
 });
