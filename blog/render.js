@@ -6,6 +6,7 @@ import markdownItTableOfContents
 // TODO: MathJax for LaTeX!
 // TODO: [CSS] Horizontally scrollable tables (check in Telegram WebView)
 // TODO: Try the 404 redirect method for clean links? /blog/article
+// TODO: Fix: Error with Permissions-Policy header: Unrecognized feature: 'interest-cohort'.
 
 const md = markdownIt();
 const toc_marker = "[[toc]]\n\n";
@@ -13,14 +14,6 @@ const toc_marker = "[[toc]]\n\n";
 const whitespace = /\s+/g;
 const uri_unsafe = /[^a-z0-9\-_.~]/g;
 const diacritics = /[\u0300-\u036f]/g;
-
-// TODO: Add param to exclude Unicode from anchor links
-
-// const slugify = (title) => String(title)
-// 	.trim()
-// 	.toLowerCase()
-// 	.replace(/\s+/g, "-")
-// 	.replace(/[^a-z0-9\-_.~]/g, "");
 
 md.use(markdownItAnchor,
 {
