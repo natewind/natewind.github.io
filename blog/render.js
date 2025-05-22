@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function()
 			.then(response => response.text())
 			.then(text =>
 			{
-				const rendered = md.render(`${toc_marker}\n<main>\n${text}\n</main>`);
+				const rendered = md.render(`${toc_marker}\n\n<main>\n\n${text}\n\n</main>`);
 				document.body.innerHTML = rendered;
 
 				document.title = document.querySelector("h1").textContent;
