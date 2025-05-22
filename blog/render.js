@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function()
 				const main = document.createElement("main");
 				main.innerHTML = md.render(toc_marker + text);
 
-				document.title = document.querySelector("h1").textContent;
+				document.title = main.querySelector("h1").textContent;
 				const nav = main.querySelector("nav");
 
 				document.body.appendChild(nav);
