@@ -18,7 +18,7 @@ $$
 
 Fusce euismod felis sed dignissim consequat. `$x^2 + y^2 = 16$` Curabitur quis erat tincidunt, dapibus libero maximus, vestibulum felis. `$\tau \approx 6.28$` Morbi non imperdiet eros. In hac habitasse platea dictumst. Separator:
 
-___
+---
 
 Pellentesque et rhoncus purus, at imperdiet velit. Suspendisse magna justo, aliquet nec ornare eu, elementum hendrerit sapien. Donec ex justo, eleifend et elit quis, dictum elementum sem. Mauris egestas tristique arcu quis bibendum. Suspendisse potenti. Cras dictum purus interdum, eleifend velit ut, vulputate mauris. Let’s put a [link in text](https://example.com) and [another](https://example.com). Nullam eget pulvinar odio. Nunc convallis faucibus pharetra. Vestibulum id tempor ex, sit amet consequat urna. Cras varius lorem quis justo rhoncus, id pulvinar diam iaculis. In eu odio ac nisi eleifend accumsan.
 
@@ -273,7 +273,7 @@ auto main() -> int
 5. List with a separator
 	* Qweergthfjmgh
 	* Rfhgnhghmfgfgn
-		___
+		---
 	* Msegrdfsadbc
 	* Dtgjyuiluykty
 
