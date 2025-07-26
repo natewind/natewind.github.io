@@ -86,7 +86,7 @@ address
 
 #telegram::before { content: url("images/telegram.svg"); }
 #github::before   { content: url("images/github.svg");   }
-#email::before    { content: url("images/email.svg");    }
+#email::before    { content: url("images/proton.svg");   }
 
 a
 {
