@@ -92,7 +92,7 @@ a
 {
 	address > &::after,
 	#courses > li > &::after,
-	ul:not(#courses) > li > &
+	p > &
 	{
 		border-bottom: 1px solid #b2ccf0;
 		padding-bottom: 1px;
