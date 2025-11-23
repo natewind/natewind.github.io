@@ -1,0 +1,89 @@
+*
+{
+	margin: 0;
+	border: 0;
+	padding: 0;
+}
+
+body
+{
+	box-sizing: border-box;
+	min-height: 100vh;
+	/* background: url("images/background.png") center center / cover; */
+	background: #3a3a3a url("images/texture.png") fixed;
+
+	/* background-image:
+		url("images/texture.png"),
+		linear-gradient(to right, #6c7bdf, #56a4ff);
+
+	background-repeat: repeat, no-repeat;
+	background-size: auto, cover;
+	background-position: center, center;
+	background-attachment: fixed; */
+
+	padding: 2rem;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1rem;
+	justify-content: flex-start;
+}
+
+a
+{
+	height: 100px;
+	width: 100%;
+	max-width: 500px;
+	backdrop-filter: blur(10px);
+	border-radius: 12px;
+	/* border: 2px solid rgba(255, 255, 255, 0.2); */
+
+	color: #f7f7f7;
+	font-family: "Ubuntu";
+	padding: 8px;
+	background: #272727 url("images/texture.png") fixed;
+
+	display: grid;
+	grid-template-columns: 100px 1fr;
+	grid-template-rows: auto auto auto;
+	gap: 0 1rem;
+	align-items: center;
+	overflow: hidden;
+	text-decoration: none;
+
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+a:hover
+{
+	/* background-image:
+		url("images/texture.png"),
+		linear-gradient(to right, #cb2d3e, #ef473a); */
+
+	background-image:
+		url("images/texture.png"),
+		linear-gradient(to right, #6c7bdf, #56a4ff);
+
+	background-repeat: repeat, no-repeat;
+	background-size: auto, cover;
+	background-position: center, center;
+	background-attachment: fixed;
+}
+
+img
+{
+	grid-row: 1 / span 3;
+	width: 100px;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 4px;
+}
+
+.title
+{
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	font-weight: bold;
+}
