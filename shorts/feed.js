@@ -62,7 +62,11 @@ const rss_promises = url_params
 	.map(item => item.trim())
 	.map(fetch_rss);
 
-const channels = await Promise.all(rss_promises);
+const channels = [];
+
+// Fetch sequentially to avoid HTTP 429 Too Many Requests
+for (const promise of rss_promises)
+	channels.push(await promise);
 
 channels
 	.flatMap(get_videos)
