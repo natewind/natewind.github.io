@@ -26,7 +26,8 @@ body
 
 a
 {
-	height: 100px;
+	/* TODO: Cleanup */
+
 	width: 100%;
 	max-width: 500px;
 	border-radius: var(--outer-gap);
@@ -39,8 +40,8 @@ a
 	background: var(--dark-grey) var(--texture);
 
 	display: grid;
-	grid-template-columns: 100px 1fr;
-	grid-template-rows: auto auto auto;
+	grid-template-columns: auto 1fr;
+	grid-template-rows: repeat(3, 24px);
 	gap: 0 var(--outer-gap);
 	align-items: center;
 	overflow: hidden;
@@ -48,7 +49,7 @@ a
 
 	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 
-	& > p, time
+	& > h2, cite, time
 	{
 		white-space: nowrap;
 		overflow: hidden;
@@ -63,31 +64,32 @@ a:active
 		var(--texture),
 		linear-gradient(to right, #6c7bdf, #56a4ff);
 
-	background-repeat: repeat, no-repeat;
-	background-size: auto, cover;
-	background-position: center, center;
-
 	& > time { color: var(--white); }
 }
 
 img
 {
 	grid-row: 1 / span 3;
-	width: 100px;
 	height: 100%;
 	object-fit: cover;
 	border-radius: calc(var(--outer-gap) - var(--inner-gap));
 }
 
-.title { font-weight: bold; }
-
-.channel
+h2
 {
+	font-size: 16px;
+	font-weight: bold;
+}
 
+cite
+{
+	font-size: 15px;
+	font-style: normal;
 }
 
 time
 {
+	font-size: 13px;
 	color: #8f8f8f;
 }
 
