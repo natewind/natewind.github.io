@@ -11,6 +11,7 @@ body
 	--inner-gap: 8px;
 
 	--white: #f7f7f7;
+	--light-grey: #8f8f8f;
 	--grey: #3a3a3a;
 	--dark-grey: #272727;
 	--texture: url("images/texture.png");
@@ -26,33 +27,30 @@ body
 
 a
 {
-	/* TODO: Cleanup */
-
+	box-sizing: border-box;
 	width: 100%;
 	max-width: 500px;
-	border-radius: var(--outer-gap);
-
-	box-sizing: border-box;
-
-	color: var(--white);
-	font-family: "Ubuntu", "Ubuntu Web";
 	padding: var(--inner-gap);
-	background: var(--dark-grey) var(--texture);
+	border-radius: var(--outer-gap);
+	overflow: hidden;
 
 	display: grid;
 	grid-template-columns: auto 1fr;
 	grid-template-rows: repeat(3, 24px);
 	gap: 0 var(--outer-gap);
 	align-items: center;
-	overflow: hidden;
+
+	color: var(--white);
+	font-family: "Ubuntu", "Ubuntu Web";
 	text-decoration: none;
 
-	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+	background: var(--dark-grey) var(--texture);
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
 
 	& > h2, cite, time
 	{
 		white-space: nowrap;
-		overflow: hidden;
+		overflow: inherit;
 		text-overflow: ellipsis;
 	}
 }
@@ -90,7 +88,7 @@ cite
 time
 {
 	font-size: 13px;
-	color: #8f8f8f;
+	color: var(--light-grey);
 }
 
 @font-face
