@@ -14,15 +14,7 @@ const channels = url_params
 
 console.log(channels);
 
-// if (listParam) {
-//   // 3. Split by comma and trim whitespace
-//   const items = listParam.split(",").map(item => item.trim());
-
-//   // 4. Print each item
-//   items.forEach(item => console.log(item));
-// } else {
-//   console.log("No items parameter found");
-// }
+channels.forEach(it => alert(it));
 
 // const parser = new XMLParser();
 
