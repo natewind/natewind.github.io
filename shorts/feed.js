@@ -1,69 +1,72 @@
 import { XMLParser } from "https://cdn.jsdelivr.net/npm/fast-xml-parser/+esm";
+import { formatDistanceToNowStrict } from "https://cdn.jsdelivr.net/npm/date-fns@4.1.0/+esm";
 
-// Examples
-// Al Jokes: https://www.youtube.com/feeds/videos.xml?channel_id=UCupQd0e1leK4-Mj1wSfnkoQ
-// Alan Becker: https://www.youtube.com/feeds/videos.xml?channel_id=UCbKWv2x9t6u8yZoB3KcPtnw
+const fetch_rss = (() => {
+	const parser = new XMLParser({ ignoreAttributes: false });
 
+	return async function(channel_id)
+	{
+		const url = `https://www.youtube.com/feeds/videos.xml?channel_id=${channel_id}`;
+		const proxy = `https://api.allorigins.win/get?url=${encodeURIComponent(url)}`;
+
+		const response = await fetch(proxy);
+		const text = await response.text();
+		const xml = JSON.parse(text).contents;
+		return parser.parse(xml);
+	};
+})();
+
+function get_videos(rss)
+{
+	const feed = rss.feed;
+
+	return feed.entry.map(entry =>
+	({
+		link: entry.link["@_href"],
+		thumbnail: entry["media:group"]["media:thumbnail"]["@_url"],
+		title: entry.title,
+		channel: feed.title,
+		date: new Date(entry.published),
+	}))
+}
+
+function create_card(video)
+{
+	const card = document.createElement("a");
+	card.href = video.link;
+
+	const thumbnail = document.createElement("img");
+	thumbnail.src = entry.thumbnail;
+	thumbnail.alt = entry.title;
+
+	const title = document.createElement("h2");
+	title.textContent = entry.title;
+
+	const channel = document.createElement("cite");
+	channel.textContent = entry.channel;
+
+	const date = document.createElement("time");
+	date.textContent = formatDistanceToNowStrict(entry.date);
+	date.dateTime = entry.date.toISOString();
+
+	card.append(thumbnail, title, channel, date);
+	return card;
+}
+
+const body = document.body;
 const url_params = new URLSearchParams(window.location.search);
 
-const channels = url_params
+const rss_promises = url_params
 	.get("channels")
 	.split(",")
-	.map(item => item.trim());
+	.map(item => item.trim())
+	.map(fetch_rss);
 
-console.log(`Parsed channel IDs: ${channels}`) // TEST
+const channels = await Promise.all(rss_promises);
 
-const parser = new XMLParser({ ignoreAttributes: false });
-
-async function fetch_rss(channel_id)
-{
-	const url = `https://www.youtube.com/feeds/videos.xml?channel_id=${channel_id}`
-	const proxy = `https://api.allorigins.win/get?url=${encodeURIComponent(url)}`;
-	const response = await fetch(proxy);
-	const text = await response.text();
-	const xml = JSON.parse(text).contents;
-	const object = parser.parse(xml);
-	return object;
-}
-
-// TODO: Filter out non-shorts (by link regex)
-// TODO: Sort combined list
-// TODO: Refactor into iterator chain
-
-// <feed>
-// 	<title>al jokes</title>
-// 	<entry>
-// 		<title>certified rock inspector #shorts #comedy #funny</title>
-// 		<link rel="alternate" href="https://www.youtube.com/shorts/nDF5I8Sohag" />
-// 		<published>2025-11-22T21:25:47+00:00</published>
-// 		<media:group>
-// 			<media:thumbnail url="https://i3.ytimg.com/vi/nDF5I8Sohag/hqdefault.jpg" />
-// 		</media:group>
-// 	</entry>
-// </feed>
-
-for (const channel_id of channels)
-{
-	const rss = await fetch_rss(channel_id);
-	console.log(`Parsed channel RSS: ${rss}`) // TEST
-
-	const feed = rss.feed;
-	console.log(`Parsed channel feed: ${feed}`) // TEST
-
-	const title = feed.title;
-	console.log(`Title: ${title}`) // TEST
-
-	for (const entry of feed.entry)
-	{
-		// const video_id = entry["yt:videoId"]
-
-		console.log(`Video title: ${entry.title}`) // TEST
-		console.log(`Link: ${entry.link["@_href"]}`) // TEST
-		console.log(`Date: ${entry.published}`) // TEST
-		console.log(`Thumbnail: ${entry["media:group"]["media:thumbnail"]["@_url"]}`) // TEST
-
-		break; // TEST
-	}
-
-	break; // TEST
-}
+cards = channels
+	.flatMap(get_videos)
+	.filter(video => video.includes("youtube.com/shorts"))
+	.sort((a, b) => b.date - a.date)
+	.map(create_card)
+	.forEach(card => body.appendChild(card));
