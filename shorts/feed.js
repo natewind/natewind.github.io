@@ -64,7 +64,7 @@ const rss_promises = url_params
 
 const channels = await Promise.all(rss_promises);
 
-cards = channels
+channels
 	.flatMap(get_videos)
 	.filter(video => video.link.includes("youtube.com/shorts"))
 	.sort((a, b) => b.date - a.date)
