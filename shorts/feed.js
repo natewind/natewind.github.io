@@ -36,18 +36,18 @@ function create_card(video)
 	card.href = video.link;
 
 	const thumbnail = document.createElement("img");
-	thumbnail.src = entry.thumbnail;
-	thumbnail.alt = entry.title;
+	thumbnail.src = video.thumbnail;
+	thumbnail.alt = video.title;
 
 	const title = document.createElement("h2");
-	title.textContent = entry.title;
+	title.textContent = video.title;
 
 	const channel = document.createElement("cite");
-	channel.textContent = entry.channel;
+	channel.textContent = video.channel;
 
 	const date = document.createElement("time");
-	date.textContent = formatDistanceToNowStrict(entry.date);
-	date.dateTime = entry.date.toISOString();
+	date.textContent = formatDistanceToNowStrict(video.date);
+	date.dateTime = video.date.toISOString();
 
 	card.append(thumbnail, title, channel, date);
 	return card;
