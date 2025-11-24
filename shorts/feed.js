@@ -66,7 +66,7 @@ const channels = await Promise.all(rss_promises);
 
 cards = channels
 	.flatMap(get_videos)
-	.filter(video => video.includes("youtube.com/shorts"))
+	.filter(video => video.link.includes("youtube.com/shorts"))
 	.sort((a, b) => b.date - a.date)
 	.map(create_card)
 	.forEach(card => body.appendChild(card));
