@@ -46,7 +46,7 @@ function create_card(video)
 	channel.textContent = video.channel;
 
 	const date = document.createElement("time");
-	date.textContent = formatDistanceToNowStrict(video.date);
+	date.textContent = `${formatDistanceToNowStrict(video.date)} ago`;
 	date.dateTime = video.date.toISOString();
 
 	card.append(thumbnail, title, channel, date);
