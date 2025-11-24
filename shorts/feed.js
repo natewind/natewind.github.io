@@ -12,21 +12,16 @@ const channels = url_params
 	.split(",")
 	.map(item => item.trim());
 
-console.log(channels);
+const parser = new XMLParser();
 
-channels.forEach(it => alert(it));
+async function fetch_rss(channel_id)
+{
+	const url = `https://www.youtube.com/feeds/videos.xml?channel_id=${channel_id}`
+	const response = await fetch(url);
+	const xml = await response.text();
+	const object = parser.parse(xml);
+	alert(object); // TEST
+	return object;
+}
 
-// const parser = new XMLParser();
-
-// async function fetchRSS(url)
-// {
-// 	const res = await fetch(url);
-// 	const xml = await res.text();
-
-// 	const obj = parser.parse(xml);
-// 	console.log(obj);
-
-// return obj;
-// }
-
-// fetchRSS("https://example.com/feed.rss");
+channels.forEach(it => fetch_rss(it));
