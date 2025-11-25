@@ -15,6 +15,7 @@ body
 	--grey: #3a3a3a;
 	--dark-grey: #272727;
 	--texture: url("images/texture.png");
+	--highlight: linear-gradient(to right, #6c7bdf, #56a4ff);
 
 	display: flex;
 	flex-direction: column;
@@ -47,22 +48,27 @@ a
 	background: var(--dark-grey) var(--texture);
 	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
 
-	& > h2, cite, time
+	& > *
 	{
 		white-space: nowrap;
 		overflow: inherit;
 		text-overflow: ellipsis;
 	}
-}
 
-a:hover,
-a:active
-{
-	background-image:
-		var(--texture),
-		linear-gradient(to right, #6c7bdf, #56a4ff);
+	&:active
+	{
+		background-image: var(--texture), var(--highlight);
+		& > time { color: var(--white); }
+	}
 
-	& > time { color: var(--white); }
+	@media (hover: hover) and (pointer: fine)
+	{
+		&:hover
+		{
+			background-image: var(--texture), var(--highlight);
+			& > time { color: var(--white); }
+		}
+	}
 }
 
 img
