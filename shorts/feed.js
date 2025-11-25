@@ -1,6 +1,15 @@
 import { XMLParser } from "https://cdn.jsdelivr.net/npm/fast-xml-parser/+esm";
 import { formatDistanceToNowStrict } from "https://cdn.jsdelivr.net/npm/date-fns@4.1.0/+esm";
 
+async function fetch_retry(url, delay = 1000)
+{
+	while (true)
+	{
+		try { return await fetch(url); }
+		catch { await new Promise(resolve => setTimeout(resolve, delay)); }
+	}
+}
+
 const fetch_rss = (() => {
 	const parser = new XMLParser({ ignoreAttributes: false });
 
@@ -9,7 +18,7 @@ const fetch_rss = (() => {
 		const url = `https://www.youtube.com/feeds/videos.xml?channel_id=${channel_id}`;
 		const proxy = `https://api.allorigins.win/get?url=${encodeURIComponent(url)}`;
 
-		const response = await fetch(proxy);
+		const response = await fetch_retry(proxy);
 		const text = await response.text();
 		const xml = JSON.parse(text).contents;
 		return parser.parse(xml);
