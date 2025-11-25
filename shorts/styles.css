@@ -48,6 +48,8 @@ a
 	background: var(--dark-grey) var(--texture);
 	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
 
+	-webkit-tap-highlight-color: transparent;
+
 	& > *
 	{
 		white-space: nowrap;
