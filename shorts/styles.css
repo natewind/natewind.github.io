@@ -102,12 +102,12 @@ time
 @font-face
 {
 	font-family: "Ubuntu Web";
-	src: url("fonts/ubuntu-regular.ttf");
+	src: url("fonts/ubuntu-regular.woff2");
 }
 
 @font-face
 {
 	font-family: "Ubuntu Web";
-	src: url("fonts/ubuntu-bold.ttf");
+	src: url("fonts/ubuntu-bold.woff2");
 	font-weight: bold;
 }
