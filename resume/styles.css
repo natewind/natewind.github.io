@@ -147,7 +147,7 @@ li
 	&::marker
 	{
 		content: "⋄";
-		font-family: initial;
+		font-family: "STIX Two Math", "STIX Two Math Web";
 	}
 }
 
@@ -278,6 +278,12 @@ li
 {
 	font-family: "Ubuntu Web";
 	src: url("fonts/ubuntu-regular.ttf");
+}
+
+@font-face
+{
+	font-family: "STIX Two Math Web";
+	src: url("fonts/stix-math-regular.otf");
 }
 
 @font-face
