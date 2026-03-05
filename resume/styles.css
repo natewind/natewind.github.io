@@ -283,27 +283,27 @@ li
 @font-face
 {
 	font-family: "PT Sans Web";
-	src: url("fonts/pt-sans-regular.ttf");
+	src: url("fonts/pt-sans-regular.woff2");
 	font-weight: normal;
 }
 
 @font-face
 {
 	font-family: "PT Sans Web";
-	src: url("fonts/pt-sans-bold.ttf");
+	src: url("fonts/pt-sans-bold.woff2");
 	font-weight: bold;
 }
 
 @font-face
 {
 	font-family: "PT Serif Web";
-	src: url("fonts/pt-serif-regular.ttf");
+	src: url("fonts/pt-serif-regular.woff2");
 	font-style: normal;
 }
 
 @font-face
 {
 	font-family: "PT Serif Web";
-	src: url("fonts/pt-serif-italic.ttf");
+	src: url("fonts/pt-serif-italic.woff2");
 	font-style: italic;
 }
