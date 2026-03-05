@@ -283,7 +283,7 @@ li
 @font-face
 {
 	font-family: "STIX Two Math Web";
-	src: url("fonts/stix-math-regular.otf");
+	src: url("fonts/stix-math-regular.woff2");
 }
 
 @font-face
