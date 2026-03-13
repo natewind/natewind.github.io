@@ -81,3 +81,18 @@ main
 	src: url("fonts/pt-sans-bold.ttf");
 	font-weight: bold;
 } */
+
+/* TODO: Link idea */
+/* a
+{
+	color: transparent;
+	background-image: linear-gradient(to right, #6c7bdf, #56a4ff);
+	background-clip: text;
+
+	OR (and use the gradient for something else)
+	color: #0073e5;
+
+	text-decoration: underline;
+	text-decoration-thickness: 2px;
+	text-underline-offset: 3px;
+} */
