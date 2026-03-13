@@ -13,6 +13,8 @@ body
 
 nav
 {
+	/* TODO: Consider darker background and change browser tab bar to #222 */
+
 	position: sticky;
 	top: 0;
 
